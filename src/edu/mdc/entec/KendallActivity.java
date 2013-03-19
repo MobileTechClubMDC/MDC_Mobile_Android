@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -43,7 +42,7 @@ public class KendallActivity extends Activity {
         b3.setOnClickListener(new OnClickListener() {
         public void  onClick(View v)	 {
         	startActivity(new Intent(Intent.ACTION_VIEW,
-        	Uri.parse("http://alcatrazcruises.com/")));
+        	Uri.parse("http://calendar.mdc.edu/default.aspx?category=&location=10-0-0&view=Grid")));
         }
         	
         });
@@ -77,7 +76,7 @@ public class KendallActivity extends Activity {
         b5.setOnClickListener(new OnClickListener() {
         public void  onClick(View v)	 {
         	startActivity(new Intent(Intent.ACTION_VIEW,
-        	Uri.parse("http://alcatrazcruises.com/")));
+        	Uri.parse("https://mycourses.mdc.edu/")));
         }
         	
         });
@@ -87,7 +86,7 @@ public class KendallActivity extends Activity {
         b6.setOnClickListener(new OnClickListener() {
         public void  onClick(View v)	 {
         	startActivity(new Intent(Intent.ACTION_VIEW,
-        	Uri.parse("http://alcatrazcruises.com/")));
+        	Uri.parse("http://www.mdc.edu/main/news/")));
         }
         	
         });
@@ -97,7 +96,7 @@ public class KendallActivity extends Activity {
         b7.setOnClickListener(new OnClickListener() {
         public void  onClick(View v)	 {
         	startActivity(new Intent(Intent.ACTION_VIEW,
-        	Uri.parse("http://alcatrazcruises.com/")));
+        	Uri.parse("http://www.mdc.edu/kendall/library/about.asp")));
         }
         	
         });
@@ -107,7 +106,7 @@ public class KendallActivity extends Activity {
         b8.setOnClickListener(new OnClickListener() {
         	   public void  onClick(View v)	 {
         			startActivity(new Intent(Intent.ACTION_VIEW,
-                        	Uri.parse("http://alcatrazcruises.com/")));
+                        	Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
                }
         
         	

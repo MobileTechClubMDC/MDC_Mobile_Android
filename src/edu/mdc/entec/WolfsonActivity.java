@@ -5,10 +5,8 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ImageView;
 import android.widget.ImageView;
 
 public class WolfsonActivity extends Activity {
@@ -28,7 +26,7 @@ public class WolfsonActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://mdc.edu")));
+						Uri.parse("https://mymdc.mdc.edu/")));
 			}
 		});
 		
@@ -88,7 +86,7 @@ public class WolfsonActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://www.mdc.edu/main/news/news.aspx")));
+						Uri.parse("http://www.mdc.edu/main/news/")));
 			}
 		});
         
@@ -113,7 +111,7 @@ public class WolfsonActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("https://sisvsr.mdc.edu/student/openclass/NewSearchM.aspx")));
+						Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
 			}
 		});
         

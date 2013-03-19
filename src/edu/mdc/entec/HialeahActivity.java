@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
-import android.widget.ImageView;
 
 public class HialeahActivity extends Activity {
     /** Called when the activity is first created. */

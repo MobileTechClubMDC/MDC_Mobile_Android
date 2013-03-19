@@ -1,7 +1,6 @@
 package edu.mdc.entec;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
