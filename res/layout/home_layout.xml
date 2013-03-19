@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000FFF"
+    android:stretchColumns="1" >
+
+    <TableRow>
+        <FrameLayout 
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" 
+                android:layout_height="60dp" 
+                android:src="@drawable/mdc_logo" 
+                android:id="@+id/imgMdcLogo"
+                android:layout_gravity="center_horizontal|center_vertical">
+            </ImageView>
+        </FrameLayout>
+    </TableRow>
+    <TableRow>
+        <FrameLayout 
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" 
+                android:layout_height="90dp" 
+                android:src="@drawable/campus_wolfson_icon" 
+                android:id="@+id/imgWolfson"
+                android:layout_gravity="center_horizontal|center_vertical">
+            </ImageView>
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" 
+                android:layout_height="90dp" 
+                android:src="@drawable/campus_kendall_icon" 
+                android:id="@+id/imgKendall"
+                android:layout_gravity="center_horizontal|center_vertical">
+            </ImageView>
+            </FrameLayout>
+     </TableRow>
+     <TableRow>
+        <FrameLayout 
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" 
+                android:layout_height="90dp" 
+                android:src="@drawable/campus_hialeah_icon" 
+                android:id="@+id/imgHialeah"
+                android:layout_gravity="center_horizontal|center_vertical">
+            </ImageView>
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" 
+                android:layout_height="90dp" 
+                android:src="@drawable/campus_homestead_icon" 
+                android:id="@+id/imgHomestead"
+                android:layout_gravity="center_horizontal|center_vertical">
+            </ImageView>
+        </FrameLayout>
+    </TableRow>
+    <TableRow>
+        <FrameLayout 
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" 
+                android:layout_height="90dp" 
+                android:src="@drawable/campus_interamerican_icon" 
+                android:id="@+id/imgInteramerican"
+                android:layout_gravity="center_horizontal|center_vertical">
+            </ImageView>
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" 
+                android:layout_height="90dp" 
+                android:src="@drawable/campus_medical_icon" 
+                android:id="@+id/imgMedical"
+                android:layout_gravity="center_horizontal|center_vertical">
+            </ImageView>
+        </FrameLayout>
+    </TableRow>
+    <TableRow>
+        <FrameLayout 
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" 
+                android:layout_height="90dp" 
+                android:src="@drawable/campus_north_icon" 
+                android:id="@+id/imgNorth"
+                android:layout_gravity="center_horizontal|center_vertical">
+            </ImageView>
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/imgWest"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/campus_west_icon" >
+            </ImageView>
+        </FrameLayout>
+    </TableRow>
+    
+</TableLayout>
