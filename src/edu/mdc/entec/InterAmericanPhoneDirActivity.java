@@ -13,13 +13,15 @@ public class InterAmericanPhoneDirActivity extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		String[] HialeahPhoneDirectory = {"Operator: 305-237-6000", "Admission: 305-237-6045",
-											"Advisment: 305-237-6133", "Financial Aid: 305-237-6040",
+		// Admission number was incorrect, so i changed to its proper number.
+	
+		String[] InteramericanPhoneDirectory = {"Operator: 305-237-6000", "Admission: 305-237-6045",
+											"Advisement: 305-237-6133", "Financial Aid: 305-237-6040",
 											"Registration: 305-237-6045",
 										"International Student: 305-237-6271", 
 										"Student Life: 305-237-6163", "Testing: 305-237-6041"};
 		
-		setListAdapter(new ArrayAdapter<String> (this,android.R.layout.simple_list_item_1, HialeahPhoneDirectory));
+		setListAdapter(new ArrayAdapter<String> (this,android.R.layout.simple_list_item_1, InteramericanPhoneDirectory));
 		
 	}
 	
