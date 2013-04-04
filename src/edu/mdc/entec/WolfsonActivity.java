@@ -50,7 +50,7 @@ public class WolfsonActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub  
 				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://www.mdc.edu/main/news/events.aspx")));
+						Uri.parse("http://calendar.mdc.edu/mobile/mobilelist.aspx")));
 			}
 		});
         
@@ -99,7 +99,7 @@ public class WolfsonActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://www.mdc.edu/libraries/")));
+						Uri.parse("http://www.mdc.edu/librarymobi/")));
 			}
 		});
         

@@ -24,7 +24,7 @@ public class HomesteadActivity extends Activity {
         	{
 				// TODO Auto-generated method stub
         		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("http://www.mdc.edu/current/")));
+				Uri.parse("https://mymdc.mdc.edu/")));
 			}
     	});
         
@@ -35,7 +35,7 @@ public class HomesteadActivity extends Activity {
         	{
 				// TODO Auto-generated method stub
         		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("https://www.google.com/a/mymdc.net")));
+				Uri.parse("http://email.mymdc.net/")));
 			}
     	});
         
@@ -46,7 +46,7 @@ public class HomesteadActivity extends Activity {
         	{
 				// TODO Auto-generated method stub
         		startActivity(new Intent(Intent.ACTION_VIEW,
-    			Uri.parse("http://calendar.mdc.edu/CalendarNOW.aspx?fromdate=12/1/2012&todate=12/31/2012&display=Month/")));
+    			Uri.parse("http://calendar.mdc.edu/mobile/mobilelist.aspx")));
 			}
     	});
         
@@ -79,7 +79,7 @@ public class HomesteadActivity extends Activity {
         	{
 				// TODO Auto-generated method stub
         		startActivity(new Intent(Intent.ACTION_VIEW,
-    			Uri.parse("http://www.mdc.edu/main/news/default.aspx")));
+    			Uri.parse("http://www.mdc.edu/main/news/")));
 			}
     	});
         
@@ -90,7 +90,7 @@ public class HomesteadActivity extends Activity {
         	{
 				// TODO Auto-generated method stub
         		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("http://www.mdc.edu/main/library/")));
+				Uri.parse("http://www.mdc.edu/librarymobi/")));
 			}
     	});
         
@@ -101,7 +101,7 @@ public class HomesteadActivity extends Activity {
         	{
 				// TODO Auto-generated method stub
         		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("http://sisvsr.mdc.edu/student/openclass/NewSearchM.aspx?newwin=Y&CACHE=1355195828479/")));
+				Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
 			}
     	});
         

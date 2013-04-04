@@ -16,49 +16,89 @@ public class KendallPhoneDirActivity extends Activity {
         
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.kendall_campus_phone_dir_layout);
-		String [] directoryKendall = {"Operator: 305-237-2000",
-				"Admissions: 305-237-2222", "Financial Aid: 305-237-2325",
-				"Library: 305-237-2321", "Advisement: 305-237-2339", "Academic Affairs: 305-237-0972"};
 		
-		ListView lvken = new ListView(this);
-		lvken.setAdapter(new ArrayAdapter<String>(this,
+		
+		
+		String[] directoryKendall={"Operator:  305-237-2000", 
+        		"Bookstore: 305-237-2361",
+        		"Admissions:  305-237-2222",
+        		"Advisement:  305-237-2339",
+        		"Bursar:  305-237-2473",
+        		"Financial Aid: 305-237-2325",
+        		"Library: 305-237-0996",
+        		"New Student Center: 305-237-0713",
+        		"Testing:  305-237-2341",
+        		"Kendall Directory"
+        };
+		
+ListView lv = new ListView(this);
+        
+        lv.setAdapter(new ArrayAdapter<String>(this,
         		android.R.layout.simple_list_item_1,directoryKendall));
-		setContentView(lvken);
-		
-		lvken.setOnItemClickListener(mListViewClicks);
+        
+        setContentView(lv);
+        
+        lv.setOnItemClickListener(mListViewClicks);
 	}
         
        private OnItemClickListener mListViewClicks = new OnItemClickListener() {
 
 		@Override
-		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-			switch (arg2) {
-			case 0:
-				startActivity(new Intent(Intent.ACTION_DIAL, 
-						Uri.parse("tel: 305-237-2000")));
-				break;
-			case 1:
-				startActivity(new Intent(Intent.ACTION_DIAL, 
-						Uri.parse("tel: 305-237-2222")));
-				break;			
-			case 2:
-				startActivity(new Intent(Intent.ACTION_DIAL, 
-						Uri.parse("tel: 305-237-2325")));
-				break;			
-			case 3:
-				startActivity(new Intent(Intent.ACTION_DIAL, 
-						Uri.parse("tel: 305-237-2321")));
-				break;		
-			case 4:
-				startActivity(new Intent(Intent.ACTION_DIAL, 
-						Uri.parse("tel: 305-237-2339")));
-				break;			
-			case 5:
-				startActivity(new Intent(Intent.ACTION_DIAL, 
-						Uri.parse("tel: 305-237-0972")));
-				break;				
-				
-			}
-		}
+		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+				long arg3) {
+		        		
+		        		switch(arg2){
+		        		case 0:
+		        			//Operator:  305-237-2000 
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-2000")));
+		        			break;
+		        		case 1:
+		        			//Bookstore: 305-237-2361
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-2361")));
+		        			break;
+		        		case 2:
+		        			//Admissions:  305-237-2222
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-2222")));
+		        			break;
+		        		case 3:
+		        			//Advisement:  305-237-2339
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-2339")));
+		        			break;
+		        		case 4:
+		        			//Bursar: 305-237-2473
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-2473")));	        		
+		        			break;
+		        		case 5:
+		        			//Financial Aid: 305-237-2325
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-2325")));
+		        			break;
+		        		case 6:
+		        			//Library: 305-237-0996
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-0996")));
+		        			break;
+		        		case 7:
+		        			//New Student Center: 305-237-0713
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("305-237-0713")));
+		        			break;
+		        		case 8:
+		        			//Testing:  305-237-2341
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("305-237-2341")));
+		        			break;
+		        		case 9:
+		        			startActivity(new Intent(Intent.ACTION_VIEW, 
+		        					Uri.parse("http://www.mdc.edu/kendall/sitemap.asp")));
+		        			break;
+		        					}
+						}
        };
+       
 }

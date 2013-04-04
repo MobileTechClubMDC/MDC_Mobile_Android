@@ -21,7 +21,7 @@ public class KendallActivity extends Activity {
         b1.setOnClickListener(new OnClickListener() {
         public void  onClick(View v)	 {
         	startActivity(new Intent(Intent.ACTION_VIEW,
-        	Uri.parse("http://mdc.edu/kendall/")));
+        	Uri.parse("https://mymdc.mdc.edu/")));
         
         }
         	
@@ -32,7 +32,7 @@ public class KendallActivity extends Activity {
         b2.setOnClickListener(new OnClickListener() {
         public void  onClick(View v)	 {
         	startActivity(new Intent(Intent.ACTION_VIEW,
-           	Uri.parse("https://mymdc.mdc.edu/")));
+           	Uri.parse("http://email.mymdc.net/")));
         }
         	
         });
@@ -42,7 +42,7 @@ public class KendallActivity extends Activity {
         b3.setOnClickListener(new OnClickListener() {
         public void  onClick(View v)	 {
         	startActivity(new Intent(Intent.ACTION_VIEW,
-        	Uri.parse("http://calendar.mdc.edu/default.aspx?category=&location=10-0-0&view=Grid")));
+        	Uri.parse("http://calendar.mdc.edu/mobile/mobilelist.aspx")));
         }
         	
         });
@@ -96,7 +96,7 @@ public class KendallActivity extends Activity {
         b7.setOnClickListener(new OnClickListener() {
         public void  onClick(View v)	 {
         	startActivity(new Intent(Intent.ACTION_VIEW,
-        	Uri.parse("http://www.mdc.edu/kendall/library/about.asp")));
+        	Uri.parse("http://www.mdc.edu/librarymobi/")));
         }
         	
         });
