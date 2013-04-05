@@ -54,12 +54,13 @@ public final class R {
         public static final int kendallmap=0x7f020028;
         public static final int kendallsafety=0x7f020029;
         public static final int mdc_logo=0x7f02002a;
-        public static final int medical=0x7f02002b;
-        public static final int north=0x7f02002c;
-        public static final int north_map=0x7f02002d;
-        public static final int public_safety_img=0x7f02002e;
-        public static final int west=0x7f02002f;
-        public static final int wolfson=0x7f020030;
+        public static final int mdc_logo_shadow=0x7f02002b;
+        public static final int medical=0x7f02002c;
+        public static final int north=0x7f02002d;
+        public static final int north_map=0x7f02002e;
+        public static final int public_safety_img=0x7f02002f;
+        public static final int west=0x7f020030;
+        public static final int wolfson=0x7f020031;
     }
     public static final class id {
         public static final int btnAngel=0x7f070005;
@@ -137,6 +138,7 @@ public final class R {
     public static final class string {
         public static final int app_name=0x7f040000;
         public static final int hello_world=0x7f040001;
+        public static final int mdc=0x7f040004;
         public static final int menu_settings=0x7f040002;
         public static final int title_activity_home=0x7f040003;
     }
