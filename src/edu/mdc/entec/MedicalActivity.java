@@ -25,9 +25,7 @@ public class MedicalActivity extends Activity {
         		//Loads the MyMDC page
         		startActivity(new Intent(Intent.ACTION_VIEW,
         				Uri.parse("https://mymdc.mdc.edu/")));
-        		
-        		//startActivity(new Intent(Intent.ACTION_VIEW,
-        		//Uri.parse("")))));
+   
         	}
         });
         
@@ -158,7 +156,7 @@ public class MedicalActivity extends Activity {
         	}
         });
         
-        //btnSwitchCampus
+        //btnHome
         ImageView SwitchCampus=(ImageView)findViewById(R.id.btnHome);
         SwitchCampus.setOnClickListener(new OnClickListener(){
         	

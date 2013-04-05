@@ -51,7 +51,6 @@
         <activity android:name=".KendallPublicSafetyActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
-
         <activity android:name=".InterAmericanActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
@@ -66,8 +65,7 @@
         </activity>
         <activity android:name=".InterAmericanPublicSafetyActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
-        </activity>
-        
+        </activity>        
         <activity android:name=".NorthActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
@@ -80,7 +78,6 @@
         <activity android:name=".NorthPublicSafetyActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
-
         <activity android:name=".HomesteadActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
@@ -90,7 +87,6 @@
         <activity android:name=".HomesteadPublicSafetyActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
-
         <activity android:name=".WestActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
@@ -99,8 +95,7 @@
         </activity>
         <activity android:name=".WestPublicSafetyActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
-        </activity>
-        
+        </activity>        
         <activity android:name=".MedicalActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
@@ -110,8 +105,15 @@
         <activity android:name=".MedicalPublicSafetyActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
-        <activity android:name=".HialeahPublicSafetyActivity"></activity>
-        <activity android:name=".AboutUs"></activity>
+        <activity android:name=".HialeahPublicSafetyActivity"
+				  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">            
+        </activity>
+        <activity android:name=".AboutUs"
+            	  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">            
+        </activity>
+        <activity android:name=".SplashScreen"
+				  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">            
+        </activity>
         
         </application>
 

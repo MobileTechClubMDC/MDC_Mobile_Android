@@ -123,12 +123,13 @@ public final class R {
         public static final int north_campus_maps_layout=0x7f030016;
         public static final int north_campus_phone_dir_layout=0x7f030017;
         public static final int north_campus_public_safety_layout=0x7f030018;
-        public static final int west_campus_layout=0x7f030019;
-        public static final int west_campus_phone_dir_layout=0x7f03001a;
-        public static final int west_campus_public_safety_layout=0x7f03001b;
-        public static final int wolfson_campus_layout=0x7f03001c;
-        public static final int wolfson_campus_phone_dir_layout=0x7f03001d;
-        public static final int wolfson_campus_public_safety_layout=0x7f03001e;
+        public static final int splash_screen=0x7f030019;
+        public static final int west_campus_layout=0x7f03001a;
+        public static final int west_campus_phone_dir_layout=0x7f03001b;
+        public static final int west_campus_public_safety_layout=0x7f03001c;
+        public static final int wolfson_campus_layout=0x7f03001d;
+        public static final int wolfson_campus_phone_dir_layout=0x7f03001e;
+        public static final int wolfson_campus_public_safety_layout=0x7f03001f;
     }
     public static final class menu {
         public static final int activity_home=0x7f060000;
