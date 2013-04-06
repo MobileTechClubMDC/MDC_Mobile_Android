@@ -37,6 +37,7 @@ public class InterAmericanActivity extends Activity {
 				// TODO Auto-generated method stub
         		//Goes back to the pick campus window.
         		startActivity(new Intent(InterAmericanActivity.this, HomeActivity.class));
+        		finish();
 			}
         });
         

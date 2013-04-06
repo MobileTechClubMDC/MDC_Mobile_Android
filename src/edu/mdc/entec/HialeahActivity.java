@@ -107,6 +107,7 @@ public class HialeahActivity extends Activity {
         		
         		//Goes back to the pick campus window.
         		startActivity(new Intent(HialeahActivity.this, HomeActivity.class));
+        		finish();
         	}
         });
         

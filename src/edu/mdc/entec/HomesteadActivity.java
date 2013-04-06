@@ -135,6 +135,7 @@ public class HomesteadActivity extends Activity {
 				// TODO Auto-generated method stub
     		    //Goes back to the pick campus window.
     		    startActivity(new Intent(HomesteadActivity.this, HomeActivity.class));
+    		    finish();
 			}
     	});
     }

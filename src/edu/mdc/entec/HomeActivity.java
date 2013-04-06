@@ -21,6 +21,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, HialeahActivity.class));
+				finish();
 			}
         	
         });
@@ -31,6 +32,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, WolfsonActivity.class));
+				finish();
 			}
         	
         });
@@ -41,6 +43,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, KendallActivity.class));
+				finish();
 			}
         	
         });
@@ -51,6 +54,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, InterAmericanActivity.class));
+				finish();
 			}
         	
         });
@@ -61,6 +65,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, NorthActivity.class));
+				finish();
 			}
         	
         });
@@ -71,6 +76,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, HomesteadActivity.class));
+				finish();
 			}
         	
         });
@@ -81,6 +87,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, WestActivity.class));
+				finish();
 			}
         	
         });
@@ -91,6 +98,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, MedicalActivity.class));
+				finish();
 			}
         	
         });

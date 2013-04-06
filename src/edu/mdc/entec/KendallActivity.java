@@ -137,6 +137,7 @@ public class KendallActivity extends Activity {
             public void  onClick(View v)	 { 
         		//Goes back to the pick campus window.
         		startActivity(new Intent(KendallActivity.this, HomeActivity.class));
+        		finish();
             }
         	
         }); 

@@ -138,6 +138,7 @@ public class NorthActivity extends Activity {
             public void  onClick(View v)	 { 
         		//Goes back to the pick campus window.
         		startActivity(new Intent(NorthActivity.this, HomeActivity.class));
+        		finish();
             }
         	
         }); 

@@ -164,6 +164,7 @@ public class MedicalActivity extends Activity {
         		
         		//Goes back to the pick campus window.
         		startActivity(new Intent(MedicalActivity.this, HomeActivity.class));
+        		finish();
         	}
         });
 
