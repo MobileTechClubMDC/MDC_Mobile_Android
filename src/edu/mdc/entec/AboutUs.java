@@ -12,20 +12,15 @@ public class AboutUs extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.about_us_layout);
         
-        String[] contributors={"Wolfson Campus Entec Dept",
-        		"Professor, Jack Lusby",
+        String[] contributors={"Wolfson Campus Entec Dept.",
+        		"Professor Jack Lusby",
         		"Mobile Technology Club",
-        		"President, Frank Gonzales",
-        		"Vice-President, Joseph George",
-        		"Secretary, Mario Thomas",
-        		"Title Name",
-        		"Title Name",
-        		"Title Name",
-        		"Title Name",
-        		"Title Name",
-        		"Title Name",
-        		"Title Name",
-        		"Title Name",
+        		"Joel Cruz",
+        		"Frank Gonzales",
+        		"Joseph George",
+        		"Patrick Helmus",
+        		"Luis Protillo",
+        		"Mario Thomas"
         };
         
         ListView lvcontrib = new ListView(this);
