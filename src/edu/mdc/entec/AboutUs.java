@@ -33,22 +33,24 @@ public class AboutUs extends Activity {
         lvcontrib.setAdapter(new ArrayAdapter<String>(this,
         		android.R.layout.simple_list_item_1,contributors));
         
+        
         setContentView(lvcontrib);
        
-        /*
+    /*   
         lvcontrib.setOnItemClickListener(mListViewClicks);
 	}
         
        private OnItemClickListener mListViewClicks = new OnItemClickListener() {
 
-		@Override
-		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-				long arg3) {
+    	   @Override
+   		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+   				long arg3) {
+   			// TODO Auto-generated method stub
 		        		
 		        		switch(arg2){
 		        		case 0:
 		        			//Operator:  305-237-8000 
-		        			startActivity(new Intent(Intent.,
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
 		        					Uri.parse("tel:305-237-8000")));
 		        			break;
 		        		case 1:
@@ -102,11 +104,9 @@ public class AboutUs extends Activity {
 		        			break;
 		        					}
 						}
-
-		*/	
-		}; 
+				*/	
+		};	
         	
-        		
 			
 }
 
