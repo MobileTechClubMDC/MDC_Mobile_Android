@@ -145,6 +145,7 @@ public class WolfsonActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
         		startActivity(new Intent(WolfsonActivity.this, HomeActivity.class));
+        		finish();
 			}
     		});
     	

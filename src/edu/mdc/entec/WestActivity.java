@@ -167,6 +167,7 @@ public class WestActivity extends Activity {
         		
         		//Goes back to the pick campus window.
         		startActivity(new Intent(WestActivity.this, HomeActivity.class));
+        		finish();
         	}
         });
 
