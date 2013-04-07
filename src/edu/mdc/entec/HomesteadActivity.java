@@ -1,6 +1,8 @@
 package edu.mdc.entec;
 
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
@@ -140,4 +142,16 @@ public class HomesteadActivity extends Activity {
     	});
     }
 
+  //Code that allows Google Analytics to work
+    @Override
+      public void onStart() {
+        super.onStart();
+        EasyTracker.getInstance().activityStart(this); // Starts Google Analytics.
+      }
+
+      @Override
+      public void onStop() {
+        super.onStop();
+        EasyTracker.getInstance().activityStop(this); // Stops Google Analytics.
+      }
 }

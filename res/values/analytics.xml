@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<resources>
+<resources xmlns:tools="https://schemas.android.com/tools"
+tools:ignore="TypographyDashes">
   <!--Google Analytics tracking ID-->
   <string name="ga_trackingId">UA-39911395-1</string>
 

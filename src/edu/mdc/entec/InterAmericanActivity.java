@@ -1,5 +1,7 @@
 package edu.mdc.entec;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -120,8 +122,19 @@ public class InterAmericanActivity extends Activity {
 				// TODO Auto-generated method stub
 				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mycourses.mdc.edu/default.asp")));
 			}
-        });
-        
-   
-}
+        });  
+   }
+    
+  //Code that allows Google Analytics to work
+    @Override
+      public void onStart() {
+        super.onStart();
+        EasyTracker.getInstance().activityStart(this); // Starts Google Analytics.
+      }
+
+      @Override
+      public void onStop() {
+        super.onStop();
+        EasyTracker.getInstance().activityStop(this); // Stops Google Analytics.
+      }
 }
