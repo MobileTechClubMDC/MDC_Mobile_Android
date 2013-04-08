@@ -1,5 +1,7 @@
 package edu.mdc.entec;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +9,7 @@ import android.os.Handler;
 
 public class SplashScreen extends Activity {
 	
-	 private final int SPLASH_DISPLAY_LENGHT = 5000;
+	 private final int SPLASH_DISPLAY_LENGHT = 3000;
 
 	    /** Called when the activity is first created. */
 	    @Override
@@ -27,5 +29,18 @@ public class SplashScreen extends Activity {
 	            }
 	        }, SPLASH_DISPLAY_LENGHT);
 	    }
+	    
+	  //Code that allows Google Analytics to work
+	    @Override
+	      public void onStart() {
+	        super.onStart();
+	        EasyTracker.getInstance().activityStart(this); // Starts Google Analytics.
+	      }
+
+	      @Override
+	      public void onStop() {
+	        super.onStop();
+	        EasyTracker.getInstance().activityStop(this); // Stops Google Analytics.
+	      }
 
 }

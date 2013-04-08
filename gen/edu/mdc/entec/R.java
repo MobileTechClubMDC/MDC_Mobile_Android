@@ -10,6 +10,14 @@ package edu.mdc.entec;
 public final class R {
     public static final class attr {
     }
+    public static final class bool {
+        /** Enable automatic activity tracking
+         */
+        public static final int ga_autoActivityTracking=0x7f050000;
+        /** Enable automatic exception tracking
+         */
+        public static final int ga_reportUncaughtExceptions=0x7f050001;
+    }
     public static final class drawable {
         public static final int campus_hialeah_icon=0x7f020000;
         public static final int campus_homestead_icon=0x7f020001;
@@ -36,67 +44,56 @@ public final class R {
         public static final int icon_news=0x7f020016;
         public static final int icon_phone=0x7f020017;
         public static final int icon_safety=0x7f020018;
-        public static final int icon_wtext_angel=0x7f020019;
-        public static final int icon_wtext_courses=0x7f02001a;
-        public static final int icon_wtext_directory=0x7f02001b;
-        public static final int icon_wtext_email=0x7f02001c;
-        public static final int icon_wtext_events=0x7f02001d;
-        public static final int icon_wtext_library=0x7f02001e;
-        public static final int icon_wtext_maps=0x7f02001f;
-        public static final int icon_wtext_mdc=0x7f020020;
-        public static final int icon_wtext_mymdc=0x7f020021;
-        public static final int icon_wtext_news=0x7f020022;
-        public static final int icon_wtext_safety=0x7f020023;
-        public static final int interamerican=0x7f020024;
-        public static final int interamerican_map=0x7f020025;
-        public static final int interamerican_parking_map=0x7f020026;
-        public static final int kendall=0x7f020027;
-        public static final int kendallmap=0x7f020028;
-        public static final int kendallsafety=0x7f020029;
-        public static final int mdc_logo=0x7f02002a;
-        public static final int mdc_logo_shadow=0x7f02002b;
-        public static final int medical=0x7f02002c;
-        public static final int north=0x7f02002d;
-        public static final int north_map=0x7f02002e;
-        public static final int public_safety_img=0x7f02002f;
-        public static final int west=0x7f020030;
-        public static final int wolfson=0x7f020031;
+        public static final int interamerican=0x7f020019;
+        public static final int interamerican_map=0x7f02001a;
+        public static final int interamerican_parking_map=0x7f02001b;
+        public static final int kendall=0x7f02001c;
+        public static final int kendallmap=0x7f02001d;
+        public static final int kendallsafety=0x7f02001e;
+        public static final int mdc_logo=0x7f02001f;
+        public static final int mdc_logo_shadow=0x7f020020;
+        public static final int medical=0x7f020021;
+        public static final int north=0x7f020022;
+        public static final int north_map=0x7f020023;
+        public static final int public_safety_img=0x7f020024;
+        public static final int west=0x7f020025;
+        public static final int wolfson=0x7f020026;
     }
     public static final class id {
-        public static final int btnAngel=0x7f070005;
-        public static final int btnCourses=0x7f070008;
-        public static final int btnEmail=0x7f070002;
-        public static final int btnEvents=0x7f070003;
-        public static final int btnHome=0x7f07000b;
-        public static final int btnLibrary=0x7f070007;
-        public static final int btnMap=0x7f070004;
-        public static final int btnMyMdc=0x7f070001;
-        public static final int btnNews=0x7f070006;
-        public static final int btnPhoneDir=0x7f07000a;
-        public static final int btnPublicSafety=0x7f070009;
-        public static final int button1=0x7f07001e;
-        public static final int id_list_view=0x7f070000;
-        public static final int id_list_view_hialeah=0x7f070011;
-        public static final int id_list_view_west=0x7f07001b;
-        public static final int imageView1=0x7f07001c;
-        public static final int imgCampus=0x7f07000c;
-        public static final int imgHialeah=0x7f070013;
-        public static final int imgHialeahMap=0x7f07000f;
-        public static final int imgHomestead=0x7f070014;
-        public static final int imgInteramerican=0x7f070015;
-        public static final int imgKendall=0x7f070016;
-        public static final int imgMdcLogo=0x7f070012;
-        public static final int imgMedical=0x7f070017;
-        public static final int imgNorth=0x7f070018;
-        public static final int imgPhone=0x7f07001f;
-        public static final int imgWest=0x7f070019;
-        public static final int imgWolfson=0x7f07001a;
-        public static final int listViewDirectory=0x7f07001d;
-        public static final int menu_settings=0x7f070021;
-        public static final int safetyContacts=0x7f070020;
-        public static final int textView1=0x7f07000d;
-        public static final int txtHialeahMap=0x7f07000e;
-        public static final int txtPhoneDirectory=0x7f070010;
+        public static final int btnAngel=0x7f080005;
+        public static final int btnCourses=0x7f080008;
+        public static final int btnEmail=0x7f080002;
+        public static final int btnEvents=0x7f080003;
+        public static final int btnHome=0x7f08000b;
+        public static final int btnLibrary=0x7f080007;
+        public static final int btnMap=0x7f080004;
+        public static final int btnMyMdc=0x7f080001;
+        public static final int btnNews=0x7f080006;
+        public static final int btnPhoneDir=0x7f08000a;
+        public static final int btnPublicSafety=0x7f080009;
+        public static final int button1=0x7f08001e;
+        public static final int id_list_view=0x7f080000;
+        public static final int id_list_view_hialeah=0x7f080011;
+        public static final int id_list_view_west=0x7f08001b;
+        public static final int imageView1=0x7f08001c;
+        public static final int imgCampus=0x7f08000c;
+        public static final int imgHialeah=0x7f080013;
+        public static final int imgHialeahMap=0x7f08000f;
+        public static final int imgHomestead=0x7f080014;
+        public static final int imgInteramerican=0x7f080015;
+        public static final int imgKendall=0x7f080016;
+        public static final int imgMdcLogo=0x7f080012;
+        public static final int imgMedical=0x7f080017;
+        public static final int imgNorth=0x7f080018;
+        public static final int imgPhone=0x7f08001f;
+        public static final int imgWest=0x7f080019;
+        public static final int imgWolfson=0x7f08001a;
+        public static final int listViewDirectory=0x7f08001d;
+        public static final int menu_settings=0x7f080021;
+        public static final int safetyContacts=0x7f080020;
+        public static final int textView1=0x7f08000d;
+        public static final int txtHialeahMap=0x7f08000e;
+        public static final int txtPhoneDirectory=0x7f080010;
     }
     public static final class layout {
         public static final int about_us_layout=0x7f030000;
@@ -133,16 +130,19 @@ public final class R {
         public static final int wolfson_campus_public_safety_layout=0x7f03001f;
     }
     public static final class menu {
-        public static final int activity_home=0x7f060000;
+        public static final int activity_home=0x7f070000;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
-        public static final int hello_world=0x7f040001;
-        public static final int mdc=0x7f040004;
-        public static final int menu_settings=0x7f040002;
-        public static final int title_activity_home=0x7f040003;
+        public static final int app_name=0x7f040001;
+        /** Google Analytics tracking ID
+         */
+        public static final int ga_trackingId=0x7f040000;
+        public static final int hello_world=0x7f040002;
+        public static final int mdc=0x7f040005;
+        public static final int menu_settings=0x7f040003;
+        public static final int title_activity_home=0x7f040004;
     }
     public static final class style {
-        public static final int AppTheme=0x7f050000;
+        public static final int AppTheme=0x7f060000;
     }
 }

@@ -1,5 +1,7 @@
 package edu.mdc.entec;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -100,5 +102,18 @@ ListView lv = new ListView(this);
 		        					}
 						}
        };
+       
+     //Code that allows Google Analytics to work
+       @Override
+         public void onStart() {
+           super.onStart();
+           EasyTracker.getInstance().activityStart(this); // Starts Google Analytics.
+         }
+
+         @Override
+         public void onStop() {
+           super.onStop();
+           EasyTracker.getInstance().activityStop(this); // Stops Google Analytics.
+         }
        
 }

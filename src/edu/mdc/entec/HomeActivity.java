@@ -1,5 +1,7 @@
 package edu.mdc.entec;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -109,4 +111,17 @@ public class HomeActivity extends Activity {
         getMenuInflater().inflate(R.menu.activity_home, menu);
         return true;
     }
+    
+  //Code that allows Google Analytics to work
+    @Override
+      public void onStart() {
+        super.onStart();
+        EasyTracker.getInstance().activityStart(this); // Starts Google Analytics.
+      }
+
+      @Override
+      public void onStop() {
+        super.onStop();
+        EasyTracker.getInstance().activityStop(this); // Stops Google Analytics.
+      }
 }
