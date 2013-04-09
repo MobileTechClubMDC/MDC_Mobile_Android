@@ -20,10 +20,9 @@ public class InterAmericanPhoneDirActivity extends Activity {
 		
 		// Admission number was incorrect, so i changed to its proper number.
 	
-		String[] InteramericanPhoneDirectory = {"Operator: 305-237-6000", "Bookstore : 305-237-6019", "Admission: 305-237-6045",
-											"Advisement: 305-237-6133", "Bursar: 305-237-6264","Financial Aid: 305-237-6040","Library:305-237-6058",
-											"Registration: 305-237-6045",
-										 "Student Life: 305-237-6163", "Testing: 305-237-6041", "Interamerican Directory"};
+		String[] InteramericanPhoneDirectory = {"Operator", "Bookstore", "Admission",
+											"Advisement", "Bursar","Financial Aid","Library",
+											"Registration", "Student Life", "Testing", "Interamerican Directory"};
 		
 		
 	

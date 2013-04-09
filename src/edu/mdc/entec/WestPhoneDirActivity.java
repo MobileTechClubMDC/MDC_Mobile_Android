@@ -19,15 +19,15 @@ public class WestPhoneDirActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.west_campus_phone_dir_layout);
         
-        String[] phoneDirectory={"Operator:  305-237-8000", 
-        		"Bookstore: 305-237-8918",
-        		"Admissions:  305-237-8900",
-        		"Advisement:  305-237-8947",
-        		"Bursar:  305-237-8951",
-        		"Financial Aid: 305-237-8968",
-        		"Library: 305-237-8931",
-        		"New Student Center: 305-237-8904",
-        		"Testing:  305-237-8979",
+        String[] phoneDirectory={"Operator", 
+        		"Bookstore",
+        		"Admissions",
+        		"Advisement",
+        		"Bursar",
+        		"Financial Aid",
+        		"Library",
+        		"New Student Center",
+        		"Testing",
         		"West Directory"
         };
         

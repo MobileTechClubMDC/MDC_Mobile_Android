@@ -17,9 +17,9 @@ public class NorthPhoneDirActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.north_campus_phone_dir_layout);
-		String[] NorthphoneDirectory={"Operator (305)237-1000","Bookstore (305)-237-1247","Library (305)-237-1142",
-				"Admissions (305)237-1111","Advisement (305)237-1425","Financial Aid (305)237-1058","Student Life (305)237-1250","New Student Center:(305)-237-1149 ",
-				"Testing:(305)-237-1015", "Bursar:(305)-237-1287", "North Directory"};
+		String[] NorthphoneDirectory={"Operator","Bookstore","Library",
+				"Admissions","Advisement","Financial Aid","Student Life","New Student Center",
+				"Testing", "Bursar", "North Directory"};
 		
 		 ListView lv = new ListView(this);
 	        
