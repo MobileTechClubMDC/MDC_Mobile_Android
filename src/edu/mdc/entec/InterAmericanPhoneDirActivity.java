@@ -1,97 +1,113 @@
 package edu.mdc.entec;
 
-import com.google.analytics.tracking.android.EasyTracker;
-
+import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.AdapterView.OnItemClickListener;
 
-public class InterAmericanPhoneDirActivity extends ListActivity {
+public class InterAmericanPhoneDirActivity extends Activity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.interamerican_campus_phone_dir_layout);
 		
 		// Admission number was incorrect, so i changed to its proper number.
 	
-		String[] InteramericanPhoneDirectory = {"Operator: 305-237-6000", "Admission: 305-237-6045",
-											"Advisement: 305-237-6133", "Financial Aid: 305-237-6040",
+		String[] InteramericanPhoneDirectory = {"Operator: 305-237-6000", "Bookstore : 305-237-6019", "Admission: 305-237-6045",
+											"Advisement: 305-237-6133", "Bursar: 305-237-6264","Financial Aid: 305-237-6040","Library:305-237-6058",
 											"Registration: 305-237-6045",
-										"International Student: 305-237-6271", 
-										"Student Life: 305-237-6163", "Testing: 305-237-6041"};
+										 "Student Life: 305-237-6163", "Testing: 305-237-6041", "Interamerican Directory"};
 		
-		setListAdapter(new ArrayAdapter<String> (this,android.R.layout.simple_list_item_1, InteramericanPhoneDirectory));
 		
-	}
 	
-	String OperatorNumber = "tel:305-237-6000";
-	String AdmissionNumber = "tel:305-237-6045";
-	String AdvisementNumber = "tel:305-237-6133";
-	String FinancialAidNumber = "tel:305-237-6040";
-	String RegistrationNumber = "tel:305-237-6045";
-	String InternationalStudent  = "tel:305-237-6271";
-	String StudentLifeNumber = "tel:305-237-6163";
-	String TestingNumber = "tel: 305-237-6041";
-	
-		protected void onListItemClick(ListView l, View v, int position, long id) {
-		
-		switch(position) {
-		case 0:
-			Intent CallOperator = new Intent(Intent.ACTION_DIAL, Uri.parse(OperatorNumber));
-			startActivity(CallOperator);
-			break;
-			
-		case 1:
-			Intent CallAdmission = new Intent(Intent.ACTION_DIAL, Uri.parse(AdmissionNumber));
-			startActivity(CallAdmission);
-			break;
-			
-		case 2:
-			Intent CallAdvisement = new Intent(Intent.ACTION_DIAL, Uri.parse(AdvisementNumber));
-			startActivity(CallAdvisement);
-			break;
-			
-		case 3:
-			Intent CallFinancialAid = new Intent(Intent.ACTION_DIAL, Uri.parse(FinancialAidNumber));
-			startActivity(CallFinancialAid);
-			break;
-			
-		case 4:
-			Intent CallRegistration = new Intent(Intent.ACTION_DIAL, Uri.parse(RegistrationNumber));
-			startActivity(CallRegistration);
-			break;
-			
-		case 5:
-			Intent CallStudentId = new Intent(Intent.ACTION_DIAL, Uri.parse(InternationalStudent));
-			startActivity(CallStudentId);
-			break;
-			
-		case 6:
-			Intent CallStudentLife = new Intent(Intent.ACTION_DIAL, Uri.parse(StudentLifeNumber));
-			startActivity(CallStudentLife);
-			break;
-			
-		case 7: 
-			Intent CallTesting = new Intent(Intent.ACTION_DIAL, Uri.parse(TestingNumber));
-			startActivity(CallTesting);
-			break;
-		}
-		
+	 ListView lvs = new ListView(this);
+     
+     lvs.setAdapter(new ArrayAdapter<String>(this,
+     		android.R.layout.simple_list_item_1,InteramericanPhoneDirectory));
+     
+     setContentView(lvs);
+     
+     lvs.setOnItemClickListener(mListViewClicks);
 	}
-		
-		//Code that allows Google Analytics to work
-	    @Override
-	      public void onStart() {
-	        super.onStart();
-	        EasyTracker.getInstance().activityStart(this); // Starts Google Analytics.
-	      }
+     
+    private OnItemClickListener mListViewClicks = new OnItemClickListener() {
 
-	      @Override
-	      public void onStop() {
-	        super.onStop();
-	        EasyTracker.getInstance().activityStop(this); // Stops Google Analytics.
-	      }
+		@Override
+		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+				long arg3) {
+		        		
+		        		switch(arg2){
+		        		case 0:
+		        			//Operator:  305-237-6000 
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-6000")));
+		        			break;
+		        		case 1:
+		        			//Bookstore: 305-237-6019
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-6019")));
+		        			break;
+		        		case 2:
+		        			//Admissions:  305-237-6045
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-6045")));
+		        			break;
+		        		case 3:
+		        			//Advisement:  305-237-6133
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-6133")));
+		        			break;
+		        		case 4:
+		        			//Bursar: 305-237-6264
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-6264")));
+		        			break;
+		        		case 5:
+		        			//Financial Aid: 305-237-8970
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-6040")));
+		        			break;
+		        		case 6:
+		        			//Library: 305-237-6058
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-6058")));
+		        			break;
+		        		case 7:
+		        			//Registration: 305-237-6045
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("tel:305-237-6045")));
+		        			break;
+		        		case 8:
+		        			//Student Life: 305-237-6163
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("305-237-6163")));
+		        			break;
+		        		case 9:
+		        			//Testing:  305-237-6041
+		        			startActivity(new Intent(Intent.ACTION_DIAL,
+		        					Uri.parse("305-237-6041")));
+		        		case 10:
+		        			startActivity(new Intent(Intent.ACTION_VIEW, 
+		        					Uri.parse("http://www.mdc.edu/iac/campus-information/directory.aspx")));
+		        			break;
+		        		}
+		}
+
+
+}; 
+
+
+
 }
+
+
+
+
+
+
