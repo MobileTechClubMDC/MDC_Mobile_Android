@@ -20,99 +20,131 @@
         <activity
 	              android:name=".HomeActivity"
 	              android:label="@string/title_activity_home"
+	              android:screenOrientation="portrait"
 	              android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".HialeahActivity"
+            	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".HialeahPhoneDirActivity"
+            	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".HialeahMapActivity"
+            	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".WolfsonPublicSafetyActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".WolfsonPhoneDirActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".WolfsonActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".KendallActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".KendallPhoneDirActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".KendallMapsActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".KendallPublicSafetyActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".InterAmericanActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".InterAmericanMapsActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".InterAmericanParkingMapActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".InterAmericanPhoneDirActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".InterAmericanPublicSafetyActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>        
         <activity android:name=".NorthActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".NorthPhoneDirActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".NorthMapsActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".NorthPublicSafetyActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".HomesteadActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".HomesteadPhoneDirActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".HomesteadPublicSafetyActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".WestActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".WestPhoneDirActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".WestPublicSafetyActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>        
         <activity android:name=".MedicalActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".MedicalPhoneDirActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".MedicalPublicSafetyActivity"
+           	  	  android:screenOrientation="portrait"
                   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
         <activity android:name=".HialeahPublicSafetyActivity"
+           	  	  android:screenOrientation="portrait"
 				  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">            
         </activity>
         <activity android:name=".AboutUs"
+           	  	  android:screenOrientation="portrait"
             	  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">            
         </activity>
         <activity android:name=".SplashScreen"
+           	  	  android:screenOrientation="portrait"
 				  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
