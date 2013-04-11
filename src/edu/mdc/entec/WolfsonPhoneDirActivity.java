@@ -19,15 +19,15 @@ public class WolfsonPhoneDirActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.wolfson_campus_phone_dir_layout);
         
-        String[] phoneDirectory={"Operator:  305-237-3000", 
-        		"Bookstore: 305-237-3236",
-        		"Admissions:  305-237-3644",
-        		"Advisement:  305-237-3077",
-        		"Bursar:  305-237-3004",
-        		"Financial Aid: 305-237-3244",
-        		"Library: 305-237-3144",
-        		"New Student Center: 305-237-3076",
-        		"Testing:  305-237-3011",
+        String[] phoneDirectory={"Operator", 
+        		"Bookstore",
+        		"Admissions",
+        		"Advisement",
+        		"Bursar",
+        		"Financial Aid",
+        		"Library",
+        		"New Student Center",
+        		"Testing",
         		"Wolfson Directory"
         };
         
