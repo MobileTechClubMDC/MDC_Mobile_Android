@@ -86,12 +86,12 @@ public class WolfsonPhoneDirActivity extends Activity {
     		case 7:
     			//New Student Center: 305-237-3076
     			startActivity(new Intent(Intent.ACTION_DIAL,
-    					Uri.parse("305-237-3076")));
+    					Uri.parse("tel:305-237-3076")));
     			break;
     		case 8:
     			//Testing:  305-237-3011
     			startActivity(new Intent(Intent.ACTION_DIAL,
-    					Uri.parse("305-237-3011")));
+    					Uri.parse("tel:305-237-3011")));
     			break;
     		case 9:
     			startActivity(new Intent(Intent.ACTION_VIEW, 

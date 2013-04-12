@@ -27,7 +27,9 @@ public class MedicalActivity extends Activity {
         		//Loads the MyMDC page
         		startActivity(new Intent(Intent.ACTION_VIEW,
         				Uri.parse("https://mymdc.mdc.edu/")));
-   
+        		
+        		//startActivity(new Intent(Intent.ACTION_VIEW,
+        		//Uri.parse("")))));
         	}
         });
         
@@ -54,7 +56,7 @@ public class MedicalActivity extends Activity {
         		
         		//Loads the events for West
         		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://calendar.mdc.edu/default.aspx?category=&location=10-0-0&view=Grid")));
+        				Uri.parse("http://calendar.mdc.edu/mobile/mobilelist.aspx")));
         		
         		//startActivity(new Intent(menuMDC.this,
         		//		change_me.class));
@@ -69,7 +71,7 @@ public class MedicalActivity extends Activity {
         		
         		//Loads up the maps
         		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://www.mdc.edu/west/images/images_home/west_c_map.gif")));
+        				Uri.parse("http://www.mdc.edu/medical/images_map/medical_center_map.jpg")));
         		
         		//startActivity(new Intent(menuMDC.this,
         		//		change_me.class));
@@ -111,7 +113,7 @@ public class MedicalActivity extends Activity {
         		
         		//Loads the West Library
         		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://www.mdc.edu/west/library/")));
+        				Uri.parse("http://www.mdc.edu/librarymobi/")));
         		
         		//startActivity(new Intent(menuMDC.this,
         		//		change_me.class));
@@ -158,7 +160,7 @@ public class MedicalActivity extends Activity {
         	}
         });
         
-        //btnHome
+        //btnSwitchCampus
         ImageView SwitchCampus=(ImageView)findViewById(R.id.btnHome);
         SwitchCampus.setOnClickListener(new OnClickListener(){
         	
@@ -166,7 +168,6 @@ public class MedicalActivity extends Activity {
         		
         		//Goes back to the pick campus window.
         		startActivity(new Intent(MedicalActivity.this, HomeActivity.class));
-        		finish();
         	}
         });
 

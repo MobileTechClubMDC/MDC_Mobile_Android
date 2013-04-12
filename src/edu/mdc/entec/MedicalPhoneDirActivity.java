@@ -6,7 +6,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -22,10 +21,17 @@ public class MedicalPhoneDirActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.west_campus_phone_dir_layout);
         
-		String[] directoryMedical ={"Admissions:305-237-4028", "Advisement:305-237-4028", "Financial Aid:305-237-4028",
-				"Student Life:305-237-4028", "Library:305-237-4028", "Testing:305-237-4028",
-				"Bursar Office:305-237-4028", "Campus Directory List"};
-        
+		String[] directoryMedical ={"Operator" , 
+				"Bookstore", 
+				"Admissions", 
+				"Advisement",
+				"Bursar",
+				"Financial Aid",
+				"Library",
+				"New Student Center", 
+				"Testing",
+				"Medical Center Directory"};
+		
         ListView lvmed = new ListView(this);
         
         lvmed.setAdapter(new ArrayAdapter<String>(this,
@@ -38,111 +44,65 @@ public class MedicalPhoneDirActivity extends Activity {
         
        private OnItemClickListener mListViewClicks = new OnItemClickListener() {
 
-		@Override
-		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-				long arg3) {
-		        		
-			switch(arg2) 
-			{
-				case 0:
-					try {
-						   Intent intent = new Intent(Intent.ACTION_CALL);
-						   intent.setData(Uri.parse("tel:+305-237-4028"));
-						   startActivity(intent);
-						} 
-					catch (Exception e) 
-						{
-						   Log.e("Homestead Campus", "Failed to invoke call", e);
-						}
-				break;
-				
-				case 1:
-					try {
-						   Intent intent = new Intent(Intent.ACTION_CALL);
-						   intent.setData(Uri.parse("tel:+305-237-4028"));
-						   startActivity(intent);
-						} 
-					catch (Exception e) 
-						{
-						   Log.e("Homestead Campus", "Failed to invoke call", e);
-						}
-				
-				break;
-				
-				case 2:
-					try {
-						   Intent intent = new Intent(Intent.ACTION_CALL);
-						   intent.setData(Uri.parse("tel:+305-237-4028"));
-						   startActivity(intent);
-						} 
-					catch (Exception e) 
-						{
-						   Log.e("Homestead Campus", "Failed to invoke call", e);
-						}
-					
-				break;
-				
-				case 3:
-					try {
-						   Intent intent = new Intent(Intent.ACTION_CALL);
-						   intent.setData(Uri.parse("tel:+305-237-4028"));
-						   startActivity(intent);
-						} 
-					catch (Exception e)
-						{
-						   Log.e("Homestead Campus", "Failed to invoke call", e);
-						}
-				
-				break;
-				
-				case 4:
-					try {
-						   Intent intent = new Intent(Intent.ACTION_CALL);
-						   intent.setData(Uri.parse("tel:+305-237-4028"));
-						   startActivity(intent);
-						} 
-					catch (Exception e) 
-						{
-						   Log.e("Homestead Campus", "Failed to invoke call", e);
-						}
-					
-				break;
-				
-				case 5:
-					try {
-						   Intent intent = new Intent(Intent.ACTION_CALL);
-						   intent.setData(Uri.parse("tel:+305-237-4028"));
-						   startActivity(intent);
-						} 
-					catch (Exception e) 
-						{
-						   Log.e("Homestead Campus", "Failed to invoke call", e);
-						}
-				
-				break;
-				
-				case 6:
-					try {
-						   Intent intent = new Intent(Intent.ACTION_CALL);
-						   intent.setData(Uri.parse("tel:+305-237-4028"));
-						   startActivity(intent);
-						} 
-					catch (Exception e) 
-						{
-						   Log.e("Homestead Campus", "Failed to invoke call", e);
-						}
-					
-				break;
-				
-				case 7:
-					startActivity(new Intent(Intent.ACTION_VIEW,
-							Uri.parse("http://www.mdc.edu/medical/administrativeservices/default.asp")));
-				break;
+    	   @Override
+   		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+   				long arg3) {
+   		        		
+   		        		switch(arg2){
+   		        		case 0:
+   		        			//Operator
+   		        			startActivity(new Intent(Intent.ACTION_DIAL,
+   		        					Uri.parse("tel:305-237-4000")));
+   		        			break;
+   		        		case 1:
+   		        			//Bookstore
+   		        			startActivity(new Intent(Intent.ACTION_DIAL,
+   		        					Uri.parse("tel:305-237-4178")));
+   		        			break;
+   		        		case 2:
+   		        			//Admissions
+   		        			startActivity(new Intent(Intent.ACTION_DIAL,
+   		        					Uri.parse("tel:305-237-4160")));
+   		        			break;
+   		        		case 3:
+   		        			//Advisement
+   		        			startActivity(new Intent(Intent.ACTION_DIAL,
+   		        					Uri.parse("tel:305-237-4141")));
+   		        			break;
+   		        		case 4:
+   		        			//Bursar: 
+   		        			startActivity(new Intent(Intent.ACTION_DIAL,
+   		        					Uri.parse("tel:305-237-4001")));
+   		        			break;
+   		        		case 5:
+   		        			//Financial Aid: 
+   		        			startActivity(new Intent(Intent.ACTION_DIAL,
+   		        					Uri.parse("tel:305-237-4160")));
+   		        			break;
+   		        		case 6:
+   		        			//Library:
+   		        			startActivity(new Intent(Intent.ACTION_DIAL,
+   		        					Uri.parse("tel:305-237-4129")));
+   		        			break;
+   		        		case 7:
+   		        			//New Student Center:   
+   		        			startActivity(new Intent(Intent.ACTION_DIAL,
+   		        					Uri.parse("tel:305-237-4141")));
+   		        			break;
+   		        		case 8:
+   		        			//Testing: 
+   		        			startActivity(new Intent(Intent.ACTION_DIAL,
+   		        					Uri.parse("tel:305-237-4275")));
+   		        			break;
+   		        		case 9:
+   		        			startActivity(new Intent(Intent.ACTION_VIEW, 
+   		        					Uri.parse("http://www.mdc.edu/medical/campus-information/directory.aspx")));
+   		        			break;
 			}
 		}
 
 			
-		}; 		
+		};	
 			
 		//Code that allows Google Analytics to work
 	    @Override

@@ -86,12 +86,12 @@ public class InterAmericanPhoneDirActivity extends Activity {
 		        		case 8:
 		        			//Student Life: 305-237-6163
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
-		        					Uri.parse("305-237-6163")));
+		        					Uri.parse("tel:305-237-6163")));
 		        			break;
 		        		case 9:
 		        			//Testing:  305-237-6041
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
-		        					Uri.parse("305-237-6041")));
+		        					Uri.parse("tel:305-237-6041")));
 		        		case 10:
 		        			startActivity(new Intent(Intent.ACTION_VIEW, 
 		        					Uri.parse("http://www.mdc.edu/iac/campus-information/directory.aspx")));

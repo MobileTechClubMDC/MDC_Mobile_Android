@@ -81,12 +81,12 @@ public class NorthPhoneDirActivity extends Activity {
 			        		case 8:
 			        			//Student Life:(305)237-1250
 			        			startActivity(new Intent(Intent.ACTION_DIAL,
-			        					Uri.parse("(305)237-1250")));
+			        					Uri.parse("tel:(305)237-1250")));
 			        			break;
 			        		case 9:
 			        			//Testing:  (305)-237-1015
 			        			startActivity(new Intent(Intent.ACTION_DIAL,
-			        					Uri.parse("(305)-237-1015")));
+			        					Uri.parse("tel:(305)-237-1015")));
 			        			break;
 			        		case 10:
 			        			startActivity(new Intent(Intent.ACTION_VIEW, 

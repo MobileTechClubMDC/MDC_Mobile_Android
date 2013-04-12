@@ -48,7 +48,7 @@ public class MedicalPublicSafetyActivity extends Activity {
 	        		
 	        		switch(arg2){
 	case 0:
-		startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:305-237-4028")));
+		startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:305-237-4100")));
 		break;
 	case 1:
 		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/safety/")));

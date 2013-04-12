@@ -21,15 +21,15 @@ public class KendallPhoneDirActivity extends Activity {
 		
 		
 		
-		String[] directoryKendall={"Operator:  305-237-2000", 
-        		"Bookstore: 305-237-2361",
-        		"Admissions:  305-237-2222",
-        		"Advisement:  305-237-2339",
-        		"Bursar:  305-237-2473",
-        		"Financial Aid: 305-237-2325",
-        		"Library: 305-237-0996",
-        		"New Student Center: 305-237-0713",
-        		"Testing:  305-237-2341",
+		String[] directoryKendall={"Operator", 
+        		"Bookstore",
+        		"Admissions",
+        		"Advisement",
+        		"Bursar",
+        		"Financial Aid",
+        		"Library",
+        		"New Student Center",
+        		"Testing",
         		"Kendall Directory"
         };
 		
@@ -88,12 +88,12 @@ ListView lv = new ListView(this);
 		        		case 7:
 		        			//New Student Center: 305-237-0713
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
-		        					Uri.parse("305-237-0713")));
+		        					Uri.parse("tel:305-237-0713")));
 		        			break;
 		        		case 8:
 		        			//Testing:  305-237-2341
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
-		        					Uri.parse("305-237-2341")));
+		        					Uri.parse("tel:305-237-2341")));
 		        			break;
 		        		case 9:
 		        			startActivity(new Intent(Intent.ACTION_VIEW, 

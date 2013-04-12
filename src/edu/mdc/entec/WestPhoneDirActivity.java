@@ -86,12 +86,12 @@ public class WestPhoneDirActivity extends Activity {
     		case 7:
     			//New Student Center: 305-237-8904
     			startActivity(new Intent(Intent.ACTION_DIAL,
-    					Uri.parse("305-237-8904")));
+    					Uri.parse("tel:305-237-8904")));
     			break;
     		case 8:
     			//Testing:  305-237-8979
     			startActivity(new Intent(Intent.ACTION_DIAL,
-    					Uri.parse("305-237-8979")));
+    					Uri.parse("tel:305-237-8979")));
     			break;
     		case 9:
     			startActivity(new Intent(Intent.ACTION_VIEW, 

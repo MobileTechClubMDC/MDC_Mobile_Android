@@ -20,15 +20,15 @@ public class HomesteadPhoneDirActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.homestead_campus_phone_dir_layout);
         
-        String[] phoneDirectory={"Operator:  305-237-5000", 
-        		"Bookstore: 305-237-5042",
-        		"Admissions:  305-237-5555",
-        		"Advisement:  305-237-5046",
-        		"Bursar:  305-237-5054",
-        		"Financial Aid: 305-237-5024",
-        		"Library: 305-237-5057",
-        		"New Student Center: 305-237-5197",
-        		"Testing:  305-237-5105",
+        String[] phoneDirectory={"Operator", 
+        		"Bookstore",
+        		"Admissions",
+        		"Advisement",
+        		"Bursar",
+        		"Financial Aid",
+        		"Library",
+        		"New Student Center",
+        		"Testing",
         		"Homestead Directory"
         };
         
@@ -87,12 +87,12 @@ public class HomesteadPhoneDirActivity extends Activity
     		case 7:
     			//New Student Center: 305-237-5197
     			startActivity(new Intent(Intent.ACTION_DIAL,
-    					Uri.parse("305-237-5197")));
+    					Uri.parse("tel:305-237-5197")));
     			break;
     		case 8:
     			//Testing:  305-237-5105
     			startActivity(new Intent(Intent.ACTION_DIAL,
-    					Uri.parse("305-237-5105")));
+    					Uri.parse("tel:305-237-5105")));
     			break;
     		case 9:
     			startActivity(new Intent(Intent.ACTION_VIEW, 

@@ -13,81 +13,98 @@ import android.widget.ImageView;
 
 public class HialeahActivity extends Activity {
     /** Called when the activity is first created. */
-    @Override
+	
+    
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hialeah_campus_layout);
         
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         
-        final ImageView MyMdc = (ImageView) findViewById(R.id.btnMyMdc);
-        final ImageView Email = (ImageView) findViewById(R.id.btnEmail);
-        final ImageView Events = (ImageView) findViewById(R.id.btnEvents);
-        final ImageView Map = (ImageView) findViewById(R.id.btnMap);
-        final ImageView Angel = (ImageView) findViewById(R.id.btnAngel);
-        final ImageView News = (ImageView) findViewById(R.id.btnNews);
-        final ImageView Library = (ImageView) findViewById(R.id.btnLibrary);
-        final ImageView Courses = (ImageView) findViewById(R.id.btnCourses);
-        final ImageView PublicSafety = (ImageView) findViewById(R.id.btnPublicSafety);
-        final ImageView PhoneDir = (ImageView) findViewById(R.id.btnPhoneDir);
+   
       
-        //MyMdc Page ImageView Click
+        //btnMyMDC
+        ImageView MyMdc = (ImageView) findViewById(R.id.btnMyMdc);
         MyMdc.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/hialeah/")));
+			
+        	public void onClick(View v) {
+				//Loads the MYMDC page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mymdc.mdc.edu/")));
 			}
         });
         
-      //Email ImageView Click
+      //btnEmail
+        ImageView Email = (ImageView) findViewById(R.id.btnEmail);
         Email.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://email.mymdc.net/")));
+			
+        	public void onClick(View v) {
+				//Loads the Email login page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://email.mymdc.net/")));
 			}
         });
         
-      //Events ImageView Click
+      //bnEvents
+        ImageView Events = (ImageView) findViewById(R.id.btnEvents);
         Events.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/news/events.aspx")));
+			
+        	public void onClick(View v) {
+				//Loads the upcoming events
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://calendar.mdc.edu/mobile/mobilelist.aspx")));
 			}
         });
         
-      //Map ImageView Click
+      //btnMap
+        ImageView Map = (ImageView) findViewById(R.id.btnMap);
         Map.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(HialeahActivity.this, HialeahMapActivity.class));
+			
+        	public void onClick(View v) {
+				//Loads the Hialeah campus map
+        		startActivity(new Intent(HialeahActivity.this, HialeahMapActivity.class));
 			}
         });
         
-      //Angel ImageView Click
+      //btnAngel
+        ImageView Angel = (ImageView) findViewById(R.id.btnAngel);
         Angel.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mycourses.mdc.edu/default.asp")));
+			
+        	public void onClick(View v) {
+				//Loads the Angel webpage
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mycourses.mdc.edu/")));
 			}
         });
         
-      //News ImageView Click
+      //btnNews
+        ImageView News = (ImageView) findViewById(R.id.btnNews);
         News.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/news/news.aspx")));
+			
+        	public void onClick(View v) {
+				//Loads the campus news
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/news/")));
 			}
         });
         
-      //Library ImageView Click
+      //btnLibrary
+        ImageView Library = (ImageView) findViewById(R.id.btnLibrary);
         Library.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/library/")));
+			
+        	public void onClick(View v) {
+				//Loads the Library page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/librarymobi/")));
 			}
         });
         
-      //Courses Store ImageView Click
+      //btnCourses
+        ImageView Courses = (ImageView) findViewById(R.id.btnCourses);
         Courses.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/academics/credit.aspx")));
+			
+        	public void onClick(View v) {
+				//Loads the courses webpage
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
 			}
         });
         
-      //Public Safety ImageView Click
+      //btnPublicSafety
+        ImageView PublicSafety = (ImageView) findViewById(R.id.btnPublicSafety);
         PublicSafety.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				// TODO Add Public Safety Activity
@@ -95,7 +112,8 @@ public class HialeahActivity extends Activity {
 			}
         });
         
-      //Phone Directory Click
+      //btnPhoneDirectory
+        ImageView PhoneDir = (ImageView) findViewById(R.id.btnPhoneDir);
         PhoneDir.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				startActivity(new Intent(HialeahActivity.this, HialeahPhoneDirActivity.class));
@@ -109,7 +127,6 @@ public class HialeahActivity extends Activity {
         		
         		//Goes back to the pick campus window.
         		startActivity(new Intent(HialeahActivity.this, HomeActivity.class));
-        		finish();
         	}
         });
         
