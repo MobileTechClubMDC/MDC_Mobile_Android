@@ -19,7 +19,8 @@ public class HialeahPhoneDirActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.hialeah_campus_phone_dir_layout);
 		
-		String[] HialeahPhoneDirectory = {"Operator",
+		String[] HialeahPhoneDirectory = {"Select To Call:",
+				"Operator",
 				"Bookstore", 
 				"Admission", 
 				"Advisment",						
@@ -47,47 +48,47 @@ public class HialeahPhoneDirActivity extends Activity {
 				long arg3) {
 
 			switch(arg2){
- 		case 0:
+ 		case 1:
  			//Operator:  305-237-8700 
  			startActivity(new Intent(Intent.ACTION_DIAL,
  					Uri.parse("tel:305-237-8700")));
  			break;
- 		case 1:
+ 		case 2:
  			//Bookstore: 305-237-8806
  			startActivity(new Intent(Intent.ACTION_DIAL,
  					Uri.parse("tel:305-237-8806")));
  			break;
- 		case 2:
+ 		case 3:
  			//Admissions:  305-237-8775
  			startActivity(new Intent(Intent.ACTION_DIAL,
  					Uri.parse("tel:305-237-8775")));
  			break;
- 		case 3:
+ 		case 4:
  			//Advisement:  305-237-8794
  			startActivity(new Intent(Intent.ACTION_DIAL,
  					Uri.parse("tel:305-237-8794")));
  			break;
- 		case 4:
+ 		case 5:
  			//Bursar: 305-237-8784
  			startActivity(new Intent(Intent.ACTION_DIAL,
  					Uri.parse("tel:305-237-8784")));	        		
  			break;
- 		case 5:
+ 		case 6:
  			//Financial Aid: 305-237-8779
  			startActivity(new Intent(Intent.ACTION_DIAL,
  					Uri.parse("tel:305-237-8779")));
  			break;
- 		case 6:
+ 		case 7:
  			//Library: 305-237-8722
  			startActivity(new Intent(Intent.ACTION_DIAL,
  					Uri.parse("tel:305-237-8722")));
  			break;
- 		case 7:
+ 		case 8:
  			//New Student Center: 305-237-8794
  			startActivity(new Intent(Intent.ACTION_DIAL,
  					Uri.parse("tel:305-237-8794")));
  			break;
- 		case 8:
+ 		case 9:
  			//Testing:  305-237-8791
  			startActivity(new Intent(Intent.ACTION_DIAL,
  					Uri.parse("tel:305-237-8791")));
