@@ -20,7 +20,8 @@ public class HomesteadPhoneDirActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.homestead_campus_phone_dir_layout);
         
-        String[] phoneDirectory={"Operator", 
+        String[] phoneDirectory={"Select To Call:",
+				"Operator", 
         		"Bookstore",
         		"Admissions",
         		"Advisement",
@@ -49,52 +50,52 @@ public class HomesteadPhoneDirActivity extends Activity
 				long arg3) {
 		        		
 			switch(arg2){
-    		case 0:
+    		case 1:
     			//Operator:  305-237-5000 
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-5000")));
     			break;
-    		case 1:
+    		case 2:
     			//Bookstore: 305-237-5042
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-5042")));
     			break;
-    		case 2:
+    		case 3:
     			//Admissions:  305-237-5555
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-5555")));
     			break;
-    		case 3:
+    		case 4:
     			//Advisement:  305-237-5046
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-5046")));
     			break;
-    		case 4:
+    		case 5:
     			//Bursar: 305-237-5054
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-5054")));	        		
     			break;
-    		case 5:
+    		case 6:
     			//Financial Aid: 305-237-5024
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-5024")));
     			break;
-    		case 6:
+    		case 7:
     			//Library: 305-237-5057
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-5057")));
     			break;
-    		case 7:
+    		case 8:
     			//New Student Center: 305-237-5197
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-5197")));
     			break;
-    		case 8:
+    		case 9:
     			//Testing:  305-237-5105
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-5105")));
     			break;
-    		case 9:
+    		case 10:
     			startActivity(new Intent(Intent.ACTION_VIEW, 
     					Uri.parse("http://www.mdc.edu/homestead/homestead_directory.asp")));
     			break;

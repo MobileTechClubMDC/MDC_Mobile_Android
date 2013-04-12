@@ -21,7 +21,8 @@ public class KendallPhoneDirActivity extends Activity {
 		
 		
 		
-		String[] directoryKendall={"Operator", 
+		String[] directoryKendall={"Select To Call:",
+				"Operator", 
         		"Bookstore",
         		"Admissions",
         		"Advisement",
@@ -50,52 +51,52 @@ ListView lv = new ListView(this);
 				long arg3) {
 		        		
 		        		switch(arg2){
-		        		case 0:
+		        		case 1:
 		        			//Operator:  305-237-2000 
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
 		        					Uri.parse("tel:305-237-2000")));
 		        			break;
-		        		case 1:
+		        		case 2:
 		        			//Bookstore: 305-237-2361
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
 		        					Uri.parse("tel:305-237-2361")));
 		        			break;
-		        		case 2:
+		        		case 3:
 		        			//Admissions:  305-237-2222
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
 		        					Uri.parse("tel:305-237-2222")));
 		        			break;
-		        		case 3:
+		        		case 4:
 		        			//Advisement:  305-237-2339
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
 		        					Uri.parse("tel:305-237-2339")));
 		        			break;
-		        		case 4:
+		        		case 5:
 		        			//Bursar: 305-237-2473
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
 		        					Uri.parse("tel:305-237-2473")));	        		
 		        			break;
-		        		case 5:
+		        		case 6:
 		        			//Financial Aid: 305-237-2325
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
 		        					Uri.parse("tel:305-237-2325")));
 		        			break;
-		        		case 6:
+		        		case 7:
 		        			//Library: 305-237-0996
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
 		        					Uri.parse("tel:305-237-0996")));
 		        			break;
-		        		case 7:
+		        		case 8:
 		        			//New Student Center: 305-237-0713
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
 		        					Uri.parse("tel:305-237-0713")));
 		        			break;
-		        		case 8:
+		        		case 9:
 		        			//Testing:  305-237-2341
 		        			startActivity(new Intent(Intent.ACTION_DIAL,
 		        					Uri.parse("tel:305-237-2341")));
 		        			break;
-		        		case 9:
+		        		case 10:
 		        			startActivity(new Intent(Intent.ACTION_VIEW, 
 		        					Uri.parse("http://www.mdc.edu/kendall/sitemap.asp")));
 		        			break;

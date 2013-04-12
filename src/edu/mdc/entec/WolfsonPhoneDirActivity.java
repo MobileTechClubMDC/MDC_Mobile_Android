@@ -19,7 +19,8 @@ public class WolfsonPhoneDirActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.wolfson_campus_phone_dir_layout);
         
-        String[] phoneDirectory={"Operator", 
+        String[] phoneDirectory={"Select To Call:",
+				"Operator", 
         		"Bookstore",
         		"Admissions",
         		"Advisement",
@@ -48,52 +49,52 @@ public class WolfsonPhoneDirActivity extends Activity {
 				long arg3) {
 		        		
 			switch(arg2){
-    		case 0:
+    		case 1:
     			//Operator:  305-237-3000 
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-3000")));
     			break;
-    		case 1:
+    		case 2:
     			//Bookstore: 305-237-3236
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-3236")));
     			break;
-    		case 2:
+    		case 3:
     			//Admissions:  305-237-3644
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-3644")));
     			break;
-    		case 3:
+    		case 4:
     			//Advisement:  305-237-3077
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-3077")));
     			break;
-    		case 4:
+    		case 5:
     			//Bursar: 305-237-3004
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-3004")));	        		
     			break;
-    		case 5:
+    		case 6:
     			//Financial Aid: 305-237-3244
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-3244")));
     			break;
-    		case 6:
+    		case 7:
     			//Library: 305-237-3144
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-3144")));
     			break;
-    		case 7:
+    		case 8:
     			//New Student Center: 305-237-3076
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-3076")));
     			break;
-    		case 8:
+    		case 9:
     			//Testing:  305-237-3011
     			startActivity(new Intent(Intent.ACTION_DIAL,
     					Uri.parse("tel:305-237-3011")));
     			break;
-    		case 9:
+    		case 10:
     			startActivity(new Intent(Intent.ACTION_VIEW, 
     					Uri.parse("http://www.mdc.edu/wolfson/GeneralInfo/directory.asp")));
     			break;

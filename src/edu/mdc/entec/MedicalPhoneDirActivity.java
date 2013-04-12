@@ -21,7 +21,8 @@ public class MedicalPhoneDirActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.west_campus_phone_dir_layout);
         
-		String[] directoryMedical ={"Operator" , 
+		String[] directoryMedical ={"Select To Call:",
+				"Operator" , 
 				"Bookstore", 
 				"Admissions", 
 				"Advisement",
@@ -49,52 +50,52 @@ public class MedicalPhoneDirActivity extends Activity {
    				long arg3) {
    		        		
    		        		switch(arg2){
-   		        		case 0:
+   		        		case 1:
    		        			//Operator
    		        			startActivity(new Intent(Intent.ACTION_DIAL,
    		        					Uri.parse("tel:305-237-4000")));
    		        			break;
-   		        		case 1:
+   		        		case 2:
    		        			//Bookstore
    		        			startActivity(new Intent(Intent.ACTION_DIAL,
    		        					Uri.parse("tel:305-237-4178")));
    		        			break;
-   		        		case 2:
+   		        		case 3:
    		        			//Admissions
    		        			startActivity(new Intent(Intent.ACTION_DIAL,
    		        					Uri.parse("tel:305-237-4160")));
    		        			break;
-   		        		case 3:
+   		        		case 4:
    		        			//Advisement
    		        			startActivity(new Intent(Intent.ACTION_DIAL,
    		        					Uri.parse("tel:305-237-4141")));
    		        			break;
-   		        		case 4:
+   		        		case 5:
    		        			//Bursar: 
    		        			startActivity(new Intent(Intent.ACTION_DIAL,
    		        					Uri.parse("tel:305-237-4001")));
    		        			break;
-   		        		case 5:
+   		        		case 6:
    		        			//Financial Aid: 
    		        			startActivity(new Intent(Intent.ACTION_DIAL,
    		        					Uri.parse("tel:305-237-4160")));
    		        			break;
-   		        		case 6:
+   		        		case 7:
    		        			//Library:
    		        			startActivity(new Intent(Intent.ACTION_DIAL,
    		        					Uri.parse("tel:305-237-4129")));
    		        			break;
-   		        		case 7:
+   		        		case 8:
    		        			//New Student Center:   
    		        			startActivity(new Intent(Intent.ACTION_DIAL,
    		        					Uri.parse("tel:305-237-4141")));
    		        			break;
-   		        		case 8:
+   		        		case 9:
    		        			//Testing: 
    		        			startActivity(new Intent(Intent.ACTION_DIAL,
    		        					Uri.parse("tel:305-237-4275")));
    		        			break;
-   		        		case 9:
+   		        		case 10:
    		        			startActivity(new Intent(Intent.ACTION_VIEW, 
    		        					Uri.parse("http://www.mdc.edu/medical/campus-information/directory.aspx")));
    		        			break;

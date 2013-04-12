@@ -17,7 +17,7 @@ public class NorthPhoneDirActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.north_campus_phone_dir_layout);
-		String[] NorthphoneDirectory={"Operator","Bookstore","Library",
+		String[] NorthphoneDirectory={"Select To Call:", "Operator","Bookstore","Library",
 				"Admissions","Advisement","Financial Aid","Student Life","New Student Center",
 				"Testing", "Bursar", "North Directory"};
 		
@@ -38,50 +38,45 @@ public class NorthPhoneDirActivity extends Activity {
 					long arg3) {
 			        		
 			        		switch(arg2){
-			        		case 0:
+			        		case 1:
 			        			//Operator:  (305)237-1000
 			        			startActivity(new Intent(Intent.ACTION_DIAL,
 			        					Uri.parse("tel:(305)237-1000")));
 			        			break;
-			        		case 1:
+			        		case 2:
 			        			//Bookstore: (305)-237-1247
 			        			startActivity(new Intent(Intent.ACTION_DIAL,
 			        					Uri.parse("tel:(305)-237-1247")));
 			        			break;
-			        		case 2:
+			        		case 3:
 			        			//Library:  (305)-237-1142
 			        			startActivity(new Intent(Intent.ACTION_DIAL,
 			        					Uri.parse("tel:(305)-237-1142")));
 			        			break;
-			        		case 3:
+			        		case 4:
 			        			//Bursar:  (305)-237-1287
 			        			startActivity(new Intent(Intent.ACTION_DIAL,
 			        					Uri.parse("tel:(305)-237-1287")));
 			        			break;
-			        		case 4:
+			        		case 5:
 			        			//Admissions: (305)237-1111
 			        			startActivity(new Intent(Intent.ACTION_DIAL,
 			        					Uri.parse("tel:(305)237-1111")));
 			        			break;
-			        		case 5:
+			        		case 6:
 			        			//Advisement: (305)237-1425
 			        			startActivity(new Intent(Intent.ACTION_DIAL,
 			        					Uri.parse("tel:(305)237-1425")));
 			        			break;
-			        		case 6:
+			        		case 7:
 			        			//Financial Aid: (305)237-1058
 			        			startActivity(new Intent(Intent.ACTION_DIAL,
 			        					Uri.parse("tel:(305)237-1058")));
 			        			break;
-			        		case 7:
+			        		case 8:
 			        			//New Student Center: (305)-237-1149
 			        			startActivity(new Intent(Intent.ACTION_DIAL,
 			        					Uri.parse("tel:(305)-237-1149")));
-			        			break;
-			        		case 8:
-			        			//Student Life:(305)237-1250
-			        			startActivity(new Intent(Intent.ACTION_DIAL,
-			        					Uri.parse("tel:(305)237-1250")));
 			        			break;
 			        		case 9:
 			        			//Testing:  (305)-237-1015
