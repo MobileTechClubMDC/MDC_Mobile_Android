@@ -13,11 +13,11 @@
         android:contentDescription="@string/mdc"/>
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/txtMTC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Beta Build 3.5" />
+        android:text="@string/build_number" />
 
 </RelativeLayout>
