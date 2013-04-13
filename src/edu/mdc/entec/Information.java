@@ -23,10 +23,14 @@ public class Information extends Activity {
 			public void onClick(View v) {
 				Intent intent = new Intent(Intent.ACTION_SEND);
 				intent.setType("plain/text");
+				//Email address to mail to
 				intent.putExtra(Intent.EXTRA_EMAIL, new String[] { "mobiletechclubmdc@gmail.com" });
+				//Inserts text into subject line
 				intent.putExtra(Intent.EXTRA_SUBJECT, "MDC Mobile Support");
+				//Inserts text into mail body
 				//intent.putExtra(Intent.EXTRA_TEXT, "mail body");
-				startActivity(Intent.createChooser(intent, ""));
+				//Launches screen to choose mail client
+				startActivity(Intent.createChooser(intent, "Please choose mail client."));
 				
 			}        
          });//End OnClickListener
