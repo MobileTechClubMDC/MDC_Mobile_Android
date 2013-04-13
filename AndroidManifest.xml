@@ -143,17 +143,18 @@
            	  	  android:screenOrientation="portrait"
             	  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">            
         </activity>
-        <activity android:name=".SplashScreen"
-           	  	  android:screenOrientation="portrait"
-				  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
-		<activity android:name=".Information"
+        <activity android:name=".Information"
            	  	  android:screenOrientation="portrait"
 				  android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+		</activity>
+        <activity android:name=".SplashScreen"
+           	  	  android:screenOrientation="portrait"
+				  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">		
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>            
-        </activity>
+        
         
         </activity>
 </application>
