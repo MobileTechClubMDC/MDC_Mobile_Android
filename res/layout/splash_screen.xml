@@ -18,6 +18,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Beta Build 3.3" />
+        android:text="Beta Build 3.5" />
 
 </RelativeLayout>

@@ -44,22 +44,24 @@ public final class R {
         public static final int icon_news=0x7f020016;
         public static final int icon_phone=0x7f020017;
         public static final int icon_safety=0x7f020018;
-        public static final int info_support=0x7f020019;
-        public static final int information=0x7f02001a;
-        public static final int interamerican=0x7f02001b;
-        public static final int interamerican_map=0x7f02001c;
-        public static final int interamerican_parking_map=0x7f02001d;
-        public static final int kendall=0x7f02001e;
-        public static final int kendallmap=0x7f02001f;
-        public static final int kendallsafety=0x7f020020;
-        public static final int mdc_logo=0x7f020021;
-        public static final int mdc_logo_shadow=0x7f020022;
-        public static final int medical=0x7f020023;
-        public static final int north=0x7f020024;
-        public static final int north_map=0x7f020025;
-        public static final int public_safety_img=0x7f020026;
-        public static final int west=0x7f020027;
-        public static final int wolfson=0x7f020028;
+        public static final int info_association=0x7f020019;
+        public static final int info_createdby=0x7f02001a;
+        public static final int info_support=0x7f02001b;
+        public static final int information=0x7f02001c;
+        public static final int interamerican=0x7f02001d;
+        public static final int interamerican_map=0x7f02001e;
+        public static final int interamerican_parking_map=0x7f02001f;
+        public static final int kendall=0x7f020020;
+        public static final int kendallmap=0x7f020021;
+        public static final int kendallsafety=0x7f020022;
+        public static final int mdc_logo=0x7f020023;
+        public static final int mdc_logo_shadow=0x7f020024;
+        public static final int medical=0x7f020025;
+        public static final int north=0x7f020026;
+        public static final int north_map=0x7f020027;
+        public static final int public_safety_img=0x7f020028;
+        public static final int west=0x7f020029;
+        public static final int wolfson=0x7f02002a;
     }
     public static final class id {
         public static final int btnAngel=0x7f080005;
@@ -73,12 +75,14 @@ public final class R {
         public static final int btnNews=0x7f080006;
         public static final int btnPhoneDir=0x7f08000a;
         public static final int btnPublicSafety=0x7f080009;
-        public static final int button1=0x7f080020;
+        public static final int button1=0x7f080021;
         public static final int id_list_view=0x7f080000;
         public static final int id_list_view_hialeah=0x7f080011;
         public static final int id_list_view_west=0x7f08001c;
         public static final int imageView1=0x7f08001d;
+        public static final int imgAssociation=0x7f080020;
         public static final int imgCampus=0x7f08000c;
+        public static final int imgCreatedBy=0x7f08001f;
         public static final int imgHialeah=0x7f080014;
         public static final int imgHialeahMap=0x7f08000f;
         public static final int imgHomestead=0x7f080015;
@@ -88,15 +92,14 @@ public final class R {
         public static final int imgMdcLogo=0x7f080012;
         public static final int imgMedical=0x7f080018;
         public static final int imgNorth=0x7f080019;
-        public static final int imgPhone=0x7f080021;
-        public static final int imgSupport=0x7f08001f;
+        public static final int imgPhone=0x7f080022;
+        public static final int imgSupport=0x7f08001e;
         public static final int imgWest=0x7f08001a;
         public static final int imgWolfson=0x7f08001b;
-        public static final int menu_settings=0x7f080023;
-        public static final int safetyContacts=0x7f080022;
+        public static final int menu_settings=0x7f080024;
+        public static final int safetyContacts=0x7f080023;
         public static final int textView1=0x7f08000d;
         public static final int txtHialeahMap=0x7f08000e;
-        public static final int txtInformation=0x7f08001e;
         public static final int txtPhoneDirectory=0x7f080010;
     }
     public static final class layout {

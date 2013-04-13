@@ -13,24 +13,31 @@
         android:paddingBottom="20dp"
         android:src="@drawable/mdc_logo" />
 
-    <TextView
-        android:id="@+id/txtInformation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView1"
-        android:layout_centerHorizontal="true"
-        android:paddingBottom="10dp"
-        android:text="@string/information"
-        android:textColor="#ffffff"
-        android:textSize="33sp" />
-
     <ImageView
         android:id="@+id/imgSupport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtInformation"
+        android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
         android:contentDescription="Support"
+        android:paddingBottom="15dp"
         android:src="@drawable/info_support" />
+
+    <ImageView
+        android:id="@+id/imgCreatedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgSupport"
+        android:layout_below="@+id/imgSupport"
+        android:paddingBottom="15dp"
+        android:src="@drawable/info_createdby" />
+
+    <ImageView
+        android:id="@+id/imgAssociation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgCreatedBy"
+        android:layout_below="@+id/imgCreatedBy"
+        android:src="@drawable/info_association" />
 
 </RelativeLayout>
