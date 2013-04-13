@@ -18,7 +18,7 @@ public class NorthPhoneDirActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.north_campus_phone_dir_layout);
 		String[] NorthphoneDirectory={"Select To Call:", "Operator","Bookstore","Library",
-				"Admissions","Advisement","Financial Aid","Student Life","New Student Center",
+				"Admissions","Advisement","Financial Aid", "New Student Center",
 				"Testing", "Bursar", "North Directory"};
 		
 		 ListView lv = new ListView(this);

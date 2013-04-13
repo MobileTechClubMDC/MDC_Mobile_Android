@@ -22,7 +22,7 @@ public class InterAmericanPhoneDirActivity extends Activity {
 	
 		String[] InteramericanPhoneDirectory = {"Select To Call:", "Operator", "Bookstore", "Admission",
 											"Advisement", "Bursar","Financial Aid","Library",
-											"Registration", "Student Life", "Testing", "Interamerican Directory"};
+											"Registration", "Testing", "Interamerican Directory"};
 		
 		
 	
