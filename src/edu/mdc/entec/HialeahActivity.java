@@ -125,8 +125,9 @@ public class HialeahActivity extends Activity {
         	
         	public void onClick(View v) {
         		
-        		//Goes back to the pick campus window.
+        		//btnHome
         		startActivity(new Intent(HialeahActivity.this, HomeActivity.class));
+        		finish();
         	}
         });
         

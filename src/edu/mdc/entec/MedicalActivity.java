@@ -160,7 +160,7 @@ public class MedicalActivity extends Activity {
         	}
         });
         
-        //btnSwitchCampus
+        //btnHome
         ImageView SwitchCampus=(ImageView)findViewById(R.id.btnHome);
         SwitchCampus.setOnClickListener(new OnClickListener(){
         	
@@ -168,6 +168,7 @@ public class MedicalActivity extends Activity {
         		
         		//Goes back to the pick campus window.
         		startActivity(new Intent(MedicalActivity.this, HomeActivity.class));
+        		finish();
         	}
         });
 
