@@ -6,7 +6,7 @@
     android:gravity="center" >
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/imgInformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/mdc_logo_shadow" 
@@ -18,6 +18,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Beta Build 3.1" />
+        android:text="Beta Build 3.2" />
 
 </RelativeLayout>

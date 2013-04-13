@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class HomeActivity extends Activity {
 
@@ -17,13 +18,23 @@ public class HomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_layout);
         
+        ImageView imgInformation = (ImageView) findViewById(R.id.imgInformation);
+        imgInformation.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(HomeActivity.this, "Information Activity", Toast.LENGTH_SHORT).show();
+				//startActivity(new Intent(HomeActivity.this, Information.class));
+			}
+        	
+        });
+        
         ImageView imgHialeah = (ImageView) findViewById(R.id.imgHialeah);
         imgHialeah.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, HialeahActivity.class));
-				finish();
 			}
         	
         });
@@ -34,7 +45,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, WolfsonActivity.class));
-				finish();
 			}
         	
         });
@@ -45,7 +55,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, KendallActivity.class));
-				finish();
 			}
         	
         });
@@ -56,7 +65,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, InterAmericanActivity.class));
-				finish();
 			}
         	
         });
@@ -67,7 +75,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, NorthActivity.class));
-				finish();
 			}
         	
         });
@@ -78,7 +85,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, HomesteadActivity.class));
-				finish();
 			}
         	
         });
@@ -89,7 +95,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, WestActivity.class));
-				finish();
 			}
         	
         });
@@ -100,7 +105,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, MedicalActivity.class));
-				finish();
 			}
         	
         });
