@@ -12,4 +12,12 @@
         android:src="@drawable/mdc_logo_shadow" 
         android:contentDescription="@string/mdc"/>
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Beta Build 3.1" />
+
 </RelativeLayout>
