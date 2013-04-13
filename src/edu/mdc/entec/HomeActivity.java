@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class HomeActivity extends Activity {
 
@@ -23,8 +22,7 @@ public class HomeActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(HomeActivity.this, "Information Activity", Toast.LENGTH_SHORT).show();
-				//startActivity(new Intent(HomeActivity.this, Information.class));
+				startActivity(new Intent(HomeActivity.this, Information.class));
 			}
         	
         });
