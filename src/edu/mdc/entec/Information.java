@@ -1,5 +1,6 @@
 package edu.mdc.entec;
 
+
 import com.google.analytics.tracking.android.EasyTracker;
 
 import android.app.Activity;
@@ -16,6 +17,9 @@ public class Information extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.information);
         
+        //Accesses strings.xml to insert build number into support email.
+        final String BuildNumber = getString(R.string.build_number);
+        
         ImageView imgSupport = (ImageView) findViewById(R.id.imgSupport);
         imgSupport.setOnClickListener(new OnClickListener() {
 
@@ -25,12 +29,12 @@ public class Information extends Activity {
 				intent.setType("plain/text");
 				//Email address to mail to
 				intent.putExtra(Intent.EXTRA_EMAIL, new String[] { "mobiletechclubmdc@gmail.com" });
-				//Inserts text into subject line
-				intent.putExtra(Intent.EXTRA_SUBJECT, "MDC Mobile Support");
+				//Inserts build number string into subject line
+				intent.putExtra(Intent.EXTRA_SUBJECT, BuildNumber );
 				//Inserts text into mail body
 				//intent.putExtra(Intent.EXTRA_TEXT, "mail body");
 				//Launches screen to choose mail client
-				startActivity(Intent.createChooser(intent, "Please choose mail client."));
+				startActivity(Intent.createChooser(intent, "Please choose email client"));
 				
 			}        
          });//End OnClickListener
