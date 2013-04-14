@@ -5,23 +5,13 @@
     android:background="#4aabf5" >
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/imgLogo"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:paddingBottom="10dp"
         android:src="@drawable/mdc_logo" />
-
-    <ImageView
-        android:id="@+id/imgSupport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView1"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="Support"
-        android:paddingBottom="15dp"
-        android:src="@drawable/info_support" />
 
     <ImageView
         android:id="@+id/imgCreatedBy"
@@ -46,6 +36,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/information" />
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imgSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Support"
+        android:paddingBottom="15dp"
+        android:src="@drawable/info_support" />
 
 </RelativeLayout>
