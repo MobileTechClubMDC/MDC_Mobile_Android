@@ -18,132 +18,139 @@ public class NorthActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.north_campus_layout);
         
-        ImageView Angel=(ImageView) findViewById(R.id.btnAngel);
-        Angel.setOnClickListener(new OnClickListener(){
-        	
-        	public void onClick(View v){
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("https://mycourses.mdc.edu/default.asp")));
-        	
-        	}
-        
-        });
-        
-        
-        ImageView Email=(ImageView) findViewById(R.id.btnEmail);
-        Email.setOnClickListener(new OnClickListener(){
-        	
-        	public void onClick(View v){
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://email.mymdc.net/")));
-        	
-        	}
-        
-        });
-        
-        
-        ImageView Events=(ImageView) findViewById(R.id.btnEvents);
-        Events.setOnClickListener(new OnClickListener(){
-        	
-        	public void onClick(View v){
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://calendar.mdc.edu/CalendarNOW.aspx?")));
-        	
-        	}
-        
-        });
-        
-        
-        ImageView Library=(ImageView) findViewById(R.id.btnLibrary);
-        Library.setOnClickListener(new OnClickListener(){
-        	
-        	public void onClick(View v){
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://mdc.edu/main/library/")));
-        	
-        	}
-        
-        });
-        
-        
-        ImageView MyMdc=(ImageView) findViewById(R.id.btnMyMdc);
+      //btnMyMdc
+        ImageView MyMdc=(ImageView)findViewById(R.id.btnMyMdc);
         MyMdc.setOnClickListener(new OnClickListener(){
         	
-        	public void onClick(View v){
+        	public void onClick(View v) {
+        		
+        		//Loads the MyMDC page
         		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://mymdc.mdc.edu/")));
-        	
+        				Uri.parse("https://mymdc.mdc.edu/")));
         	}
-        
         });
         
-        
-        ImageView News=(ImageView) findViewById(R.id.btnNews);
-        News.setOnClickListener(new OnClickListener(){
+        //btnEmail
+        ImageView Email=(ImageView)findViewById(R.id.btnEmail);
+        Email.setOnClickListener(new OnClickListener(){
         	
-        	public void onClick(View v){
+        	public void onClick(View v) {
+        		
+        		//Loads student e-mail access
         		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://www.mdc.edu/main/news/")));
-        	
+        				Uri.parse("http://email.mymdc.net/")));
         	}
-        
         });
         
-        
-        ImageView Safety=(ImageView) findViewById(R.id.btnPublicSafety);
-        Safety.setOnClickListener(new OnClickListener(){
+        //btnEvents
+        ImageView Events=(ImageView)findViewById(R.id.btnEvents);
+        Events.setOnClickListener(new OnClickListener(){
         	
-        	public void onClick(View v){
-        		startActivity(new Intent(NorthActivity.this, NorthPublicSafetyActivity.class));	
-        	
-        	}
-        
-        });
-        
-        ImageView Courses=(ImageView) findViewById(R.id.btnCourses);
-        Courses.setOnClickListener(new OnClickListener(){
-        	
-        	public void onClick(View v){
+        	public void onClick(View v) {
+        		
+        		//Loads the events for West
         		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://www.mdc.edu/main/academics/credit.aspx")));
-        	
+        				Uri.parse("http://calendar.mdc.edu/default.aspx?category=&location=10-0-0&view=Grid")));
         	}
-        
         });
         
-        ImageView Map=(ImageView) findViewById(R.id.btnMap);
+        //btnMap
+        ImageView Map=(ImageView)findViewById(R.id.btnMap);
         Map.setOnClickListener(new OnClickListener(){
         	
-        	public void onClick(View v){
-        		//To do auto-generated method stub
-        		startActivity(new Intent(NorthActivity.this, NorthMapsActivity.class));	
-        	
+        	public void onClick(View v) {
+        		
+        		//Loads up the maps
+        		startActivity(new Intent(Intent.ACTION_VIEW,
+        				Uri.parse("http://www.mdc.edu/main/images/northcampus_map_02_11_11_tcm6-1728.jpg")));        		
         	}
-        
         });
         
-        ImageView Directory=(ImageView) findViewById(R.id.btnPhoneDir);
-        Directory.setOnClickListener(new OnClickListener(){
+        //btnAngel
+        ImageView Angel=(ImageView)findViewById(R.id.btnAngel);
+        Angel.setOnClickListener(new OnClickListener(){
         	
-        	public void onClick(View v){
-        		startActivity(new Intent(NorthActivity.this, NorthPhoneDirActivity.class));	
-            	
-        	
-        	
+        	public void onClick(View v) {
+        		
+        		//Goes to the URL for Angel
+        		startActivity(new Intent(Intent.ACTION_VIEW,
+        				Uri.parse("https://mycourses.mdc.edu/")));
         	}
-        
         });
-
-        // Switch Campus
-        ImageView Home=(ImageView)findViewById(R.id.btnHome);
-        Home.setOnClickListener(new OnClickListener() {
-            public void  onClick(View v)	 { 
+        
+        //btnNews
+        ImageView News=(ImageView)findViewById(R.id.btnNews);
+        News.setOnClickListener(new OnClickListener(){
+        	
+        	public void onClick(View v) {
+        		
+        		//Loads campus news
+        		startActivity(new Intent(Intent.ACTION_VIEW,
+        				Uri.parse("http://www.mdc.edu/main/news/")));
+        	}
+        });
+        
+        //btnLibrary
+        ImageView Library=(ImageView)findViewById(R.id.btnLibrary);
+        Library.setOnClickListener(new OnClickListener(){
+        	
+        	public void onClick(View v) {
+        		
+        //Loads the North Library
+        		startActivity(new Intent(Intent.ACTION_VIEW,
+        				Uri.parse("http://www.mdc.edu/west/library/")));
+        	}
+        });
+        
+        //btnCourses
+        ImageView Courses=(ImageView)findViewById(R.id.btnCourses);
+        Courses.setOnClickListener(new OnClickListener(){
+        	
+        	public void onClick(View v) {
+        		
+        		//Loads the course catalogs.
+        		startActivity(new Intent(Intent.ACTION_VIEW,
+        				Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
+        	}
+        });
+        
+        //btnPublicSafety
+        ImageView PublicSafety=(ImageView)findViewById(R.id.btnPublicSafety);
+        PublicSafety.setOnClickListener(new OnClickListener(){
+        	
+        	public void onClick(View v) {
+        		
+       //Loads the Public Safety info for North
+        		
+        		startActivity(new Intent(NorthActivity.this,
+        				NorthPublicSafetyActivity.class));
+        	}
+        });
+        
+        //btnPhoneDir
+        ImageView PhoneDir=(ImageView)findViewById(R.id.btnPhoneDir);
+        PhoneDir.setOnClickListener(new OnClickListener(){
+        	
+        	public void onClick(View v) {
+        		
+        //Loads the North Directory
+        		
+        		
+        		startActivity(new Intent(NorthActivity.this, NorthPhoneDirActivity.class));
+        	}
+        });
+        
+        //btnSwitchCampus
+        ImageView SwitchCampus=(ImageView)findViewById(R.id.btnHome);
+        SwitchCampus.setOnClickListener(new OnClickListener(){
+        	
+        	public void onClick(View v) {
+        		
         		//Goes back to the pick campus window.
         		startActivity(new Intent(NorthActivity.this, HomeActivity.class));
         		finish();
-            }
-        	
-        }); 
+        	}
+        });  
 
     }
     

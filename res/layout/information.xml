@@ -10,6 +10,7 @@
         android:layout_height="65dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:contentDescription="@string/mdc"
         android:paddingBottom="10dp"
         android:src="@drawable/mdc_logo" />
 
@@ -19,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imgSupport"
         android:layout_below="@+id/imgSupport"
+        android:contentDescription="@string/mdc_mobiletechclub"
         android:paddingBottom="15dp"
         android:src="@drawable/info_createdby" />
 
@@ -28,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imgCreatedBy"
         android:layout_below="@+id/imgCreatedBy"
+        android:contentDescription="@string/entec"
         android:src="@drawable/info_association" />
 
     <ImageView
@@ -36,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:contentDescription="@string/home"
         android:src="@drawable/home" />
 
     <ImageView
@@ -44,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imgLogo"
         android:layout_centerHorizontal="true"
-        android:contentDescription="Support"
+        android:contentDescription="@string/contact_us"
         android:paddingBottom="15dp"
         android:src="@drawable/info_support" />
 

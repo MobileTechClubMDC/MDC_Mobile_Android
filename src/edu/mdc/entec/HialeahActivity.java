@@ -4,23 +4,18 @@ import com.google.analytics.tracking.android.EasyTracker;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 
-public class HialeahActivity extends Activity {
-    /** Called when the activity is first created. */
-	
+public class HialeahActivity extends Activity {	
     
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hialeah_campus_layout);
-        
-        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        
+          
    
       
         //btnMyMDC
@@ -59,7 +54,8 @@ public class HialeahActivity extends Activity {
 			
         	public void onClick(View v) {
 				//Loads the Hialeah campus map
-        		startActivity(new Intent(HialeahActivity.this, HialeahMapActivity.class));
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/hialeah/images/hialeah_map.gif")));
+        		
 			}
         });
         
@@ -68,7 +64,7 @@ public class HialeahActivity extends Activity {
         Angel.setOnClickListener(new OnClickListener() {
 			
         	public void onClick(View v) {
-				//Loads the Angel webpage
+				//Loads the Angel web page
         		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mycourses.mdc.edu/")));
 			}
         });
@@ -98,7 +94,7 @@ public class HialeahActivity extends Activity {
         Courses.setOnClickListener(new OnClickListener() {
 			
         	public void onClick(View v) {
-				//Loads the courses webpage
+				//Loads the courses web page
         		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
 			}
         });

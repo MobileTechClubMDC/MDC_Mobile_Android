@@ -66,46 +66,46 @@ public final class R {
         public static final int wolfson=0x7f02002c;
     }
     public static final class id {
-        public static final int btnAngel=0x7f08000d;
-        public static final int btnCourses=0x7f080010;
-        public static final int btnEmail=0x7f08000a;
-        public static final int btnEvents=0x7f08000b;
-        public static final int btnHome=0x7f080013;
-        public static final int btnLibrary=0x7f08000f;
-        public static final int btnMap=0x7f08000c;
-        public static final int btnMyMdc=0x7f080009;
-        public static final int btnNews=0x7f08000e;
-        public static final int btnPhoneDir=0x7f080012;
-        public static final int btnPublicSafety=0x7f080011;
+        public static final int btnAngel=0x7f08000e;
+        public static final int btnCourses=0x7f080011;
+        public static final int btnEmail=0x7f08000b;
+        public static final int btnEvents=0x7f08000c;
+        public static final int btnHome=0x7f080014;
+        public static final int btnLibrary=0x7f080010;
+        public static final int btnMap=0x7f08000d;
+        public static final int btnMyMdc=0x7f08000a;
+        public static final int btnNews=0x7f08000f;
+        public static final int btnPhoneDir=0x7f080013;
+        public static final int btnPublicSafety=0x7f080012;
         public static final int button1=0x7f08002b;
-        public static final int id_list_view=0x7f080024;
-        public static final int id_list_view_hialeah=0x7f080019;
-        public static final int id_list_view_west=0x7f080025;
+        public static final int id_list_view=0x7f080025;
+        public static final int id_list_view_hialeah=0x7f08001a;
+        public static final int id_list_view_west=0x7f080026;
         public static final int imageView1=0x7f080008;
-        public static final int imgAssociation=0x7f080029;
-        public static final int imgCampus=0x7f080014;
-        public static final int imgCreatedBy=0x7f080027;
-        public static final int imgHialeah=0x7f08001c;
-        public static final int imgHialeahMap=0x7f080017;
-        public static final int imgHome=0x7f08002a;
-        public static final int imgHomestead=0x7f08001d;
-        public static final int imgInformation=0x7f08001b;
-        public static final int imgInteramerican=0x7f08001e;
-        public static final int imgKendall=0x7f08001f;
-        public static final int imgLogo=0x7f080026;
-        public static final int imgMdcLogo=0x7f08001a;
-        public static final int imgMedical=0x7f080020;
-        public static final int imgNorth=0x7f080021;
+        public static final int imgAssociation=0x7f08002a;
+        public static final int imgCampus=0x7f080015;
+        public static final int imgCreatedBy=0x7f080028;
+        public static final int imgHialeah=0x7f08001d;
+        public static final int imgHialeahMap=0x7f080018;
+        public static final int imgHome=0x7f080009;
+        public static final int imgHomestead=0x7f08001e;
+        public static final int imgInformation=0x7f08001c;
+        public static final int imgInteramerican=0x7f08001f;
+        public static final int imgKendall=0x7f080020;
+        public static final int imgLogo=0x7f080027;
+        public static final int imgMdcLogo=0x7f08001b;
+        public static final int imgMedical=0x7f080021;
+        public static final int imgNorth=0x7f080022;
         public static final int imgPhone=0x7f08002c;
-        public static final int imgSupport=0x7f080028;
-        public static final int imgWest=0x7f080022;
-        public static final int imgWolfson=0x7f080023;
+        public static final int imgSupport=0x7f080029;
+        public static final int imgWest=0x7f080023;
+        public static final int imgWolfson=0x7f080024;
         public static final int menu_settings=0x7f08002e;
         public static final int safetyContacts=0x7f08002d;
-        public static final int textView1=0x7f080015;
-        public static final int txtHialeahMap=0x7f080016;
+        public static final int textView1=0x7f080016;
+        public static final int txtHialeahMap=0x7f080017;
         public static final int txtMTC=0x7f080001;
-        public static final int txtPhoneDirectory=0x7f080018;
+        public static final int txtPhoneDirectory=0x7f080019;
         public static final int txt_about1=0x7f080000;
         public static final int txt_about2=0x7f080002;
         public static final int txt_about3=0x7f080003;
@@ -153,25 +153,53 @@ public final class R {
         public static final int activity_home=0x7f070000;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int build_number=0x7f040009;
-        public static final int frank_gonzalez=0x7f04000c;
+        public static final int angel=0x7f040017;
+        public static final int app_name=0x7f040002;
+        /**  Build number must be changed every build for support & feedback accuracy 
+         */
+        public static final int build_number=0x7f040001;
+        public static final int contact_us=0x7f04000a;
+        public static final int courses=0x7f04001a;
+        public static final int directory=0x7f04001c;
+        public static final int email=0x7f040014;
+        public static final int entec=0x7f040009;
+        public static final int events=0x7f040015;
+        public static final int frank_gonzalez=0x7f040020;
         /** Google Analytics tracking ID
          */
         public static final int ga_trackingId=0x7f040000;
-        public static final int hello_world=0x7f040002;
+        /**  Campus Names 
+         */
+        public static final int hileah=0x7f04000b;
+        public static final int home=0x7f04001d;
+        public static final int homestead=0x7f04000c;
         public static final int information=0x7f040007;
-        public static final int jack_lusby=0x7f04000a;
-        public static final int joel_cruz=0x7f04000b;
-        public static final int joeseph_george=0x7f04000d;
-        public static final int luis_portillo=0x7f04000f;
-        public static final int mario_thomas=0x7f040010;
+        public static final int interamerican=0x7f04000d;
+        /**  Contributors 
+         */
+        public static final int jack_lusby=0x7f04001e;
+        public static final int joel_cruz=0x7f04001f;
+        public static final int joeseph_george=0x7f040021;
+        public static final int kendall=0x7f04000e;
+        public static final int library=0x7f040019;
+        public static final int luis_portillo=0x7f040023;
+        public static final int maps=0x7f040016;
+        public static final int mario_thomas=0x7f040024;
         public static final int mdc=0x7f040005;
         public static final int mdc_mobiletechclub=0x7f040008;
+        public static final int medical=0x7f04000f;
         public static final int menu_settings=0x7f040003;
-        public static final int patrick_helmus=0x7f04000e;
+        /**  Campus layout buttons 
+         */
+        public static final int my_mdc=0x7f040013;
+        public static final int news=0x7f040018;
+        public static final int north=0x7f040010;
+        public static final int patrick_helmus=0x7f040022;
+        public static final int saftey=0x7f04001b;
         public static final int select_to_call=0x7f040006;
         public static final int title_activity_home=0x7f040004;
+        public static final int west=0x7f040011;
+        public static final int wolfson=0x7f040012;
     }
     public static final class style {
         public static final int AppTheme=0x7f060000;

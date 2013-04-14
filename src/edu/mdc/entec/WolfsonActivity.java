@@ -64,7 +64,7 @@ public class WolfsonActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub  
 				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://www.mdc.edu/wolfson/generalInfo/campus_map.asp")));
+						Uri.parse("http://www.mdc.edu/main/images/wolfson_campus_map_01_10_2013_tcm6-75074.jpg")));
 			}
 		});
         

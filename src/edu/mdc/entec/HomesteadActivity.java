@@ -59,7 +59,7 @@ public class HomesteadActivity extends Activity {
         	{
 				// TODO Auto-generated method stub
         		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("http://www.mdc.edu/main/campus_finder/directions/homestead.aspx/")));
+				Uri.parse("http://www.mdc.edu/main/images/homestead-campus5_tcm6-1738.jpg")));
 			}
     	});
         
