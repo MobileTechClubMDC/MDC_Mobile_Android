@@ -158,11 +158,11 @@ public final class R {
         /**  Build number must be changed every build for support & feedback accuracy 
          */
         public static final int build_number=0x7f040001;
-        public static final int contact_us=0x7f04000a;
+        public static final int contact_us=0x7f040009;
         public static final int courses=0x7f04001a;
         public static final int directory=0x7f04001c;
         public static final int email=0x7f040014;
-        public static final int entec=0x7f040009;
+        public static final int entec=0x7f040008;
         public static final int events=0x7f040015;
         public static final int frank_gonzalez=0x7f040020;
         /** Google Analytics tracking ID
@@ -173,7 +173,7 @@ public final class R {
         public static final int hileah=0x7f04000b;
         public static final int home=0x7f04001d;
         public static final int homestead=0x7f04000c;
-        public static final int information=0x7f040007;
+        public static final int information=0x7f04000a;
         public static final int interamerican=0x7f04000d;
         /**  Contributors 
          */
@@ -186,7 +186,7 @@ public final class R {
         public static final int maps=0x7f040016;
         public static final int mario_thomas=0x7f040024;
         public static final int mdc=0x7f040005;
-        public static final int mdc_mobiletechclub=0x7f040008;
+        public static final int mdc_mobiletechclub=0x7f040007;
         public static final int medical=0x7f04000f;
         public static final int menu_settings=0x7f040003;
         /**  Campus layout buttons 
