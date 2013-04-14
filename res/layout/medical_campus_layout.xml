@@ -10,44 +10,60 @@
             android:layout_height="100dp"
             android:layout_width="0dp"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
-                android:layout_height="wrap_content" 
-                android:src="@drawable/icon_mymdc" 
+
+            <ImageView
                 android:id="@+id/btnMyMdc"
-                android:layout_gravity="center_horizontal|center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/my_mdc"
+                android:src="@drawable/icon_mymdc" >
+
             </ImageView>
         </FrameLayout>
         <FrameLayout 
             android:layout_height="100dp"
             android:layout_width="0dp"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
-                android:layout_height="wrap_content" 
-                android:src="@drawable/icon_email" 
+
+            <ImageView
                 android:id="@+id/btnEmail"
-                android:layout_gravity="center_horizontal|center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/email"
+                android:src="@drawable/icon_email" >
+
             </ImageView>
         </FrameLayout>
         <FrameLayout 
             android:layout_height="100dp"
             android:layout_width="0dp"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
-                android:layout_height="wrap_content" 
-                android:src="@drawable/icon_events" 
+
+            <ImageView
                 android:id="@+id/btnEvents"
-                android:layout_gravity="center_horizontal|center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/events"
+                android:src="@drawable/icon_events" >
+
             </ImageView>
         </FrameLayout>
         <FrameLayout 
             android:layout_height="100dp"
             android:layout_width="0dp"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
-                android:layout_height="wrap_content" 
-                android:src="@drawable/icon_maps" 
+
+            <ImageView
                 android:id="@+id/btnMap"
-                android:layout_gravity="center_horizontal|center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/maps"
+                android:src="@drawable/icon_maps" >
+
             </ImageView>
         </FrameLayout>
     </TableRow>
@@ -56,10 +72,12 @@
             android:layout_height="100dp"
             android:layout_width="0dp"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
+            <ImageView 
+                android:layout_width="wrap_content" 
                 android:layout_height="wrap_content" 
                 android:src="@drawable/icon_angel" 
                 android:id="@+id/btnAngel"
+                android:contentDescription="@string/angel"
                 android:layout_gravity="center_horizontal|center_vertical">
             </ImageView>
         </FrameLayout>
@@ -67,33 +85,45 @@
             android:layout_height="100dp"
             android:layout_width="0dp"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
-                android:layout_height="wrap_content" 
-                android:src="@drawable/icon_news" 
+
+            <ImageView
                 android:id="@+id/btnNews"
-                android:layout_gravity="center_horizontal|center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/news"
+                android:src="@drawable/icon_news" >
+
             </ImageView>
         </FrameLayout>
         <FrameLayout 
             android:layout_height="100dp"
             android:layout_width="0dp"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
-                android:layout_height="wrap_content" 
-                android:src="@drawable/icon_library" 
+
+            <ImageView
                 android:id="@+id/btnLibrary"
-                android:layout_gravity="center_horizontal|center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/library"
+                android:src="@drawable/icon_library" >
+
             </ImageView>
         </FrameLayout>
         <FrameLayout 
             android:layout_height="100dp"
             android:layout_width="0dp"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
-                android:layout_height="wrap_content" 
-                android:src="@drawable/icon_courses" 
+
+            <ImageView
                 android:id="@+id/btnCourses"
-                android:layout_gravity="center_horizontal|center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/courses"
+                android:src="@drawable/icon_courses" >
+
             </ImageView>
         </FrameLayout>
     </TableRow>
@@ -102,33 +132,45 @@
             android:layout_height="100dp"
             android:layout_width="0dp"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
-                android:layout_height="wrap_content" 
-                android:src="@drawable/icon_safety" 
+
+            <ImageView
                 android:id="@+id/btnPublicSafety"
-                android:layout_gravity="center_horizontal|center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/saftey"
+                android:src="@drawable/icon_safety" >
+
             </ImageView>
         </FrameLayout>
         <FrameLayout 
             android:layout_height="100dp"
             android:layout_width="0dp"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
-                android:layout_height="wrap_content" 
-                android:src="@drawable/icon_directory" 
+
+            <ImageView
                 android:id="@+id/btnPhoneDir"
-                android:layout_gravity="center_horizontal|center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/directory"
+                android:src="@drawable/icon_directory" >
+
             </ImageView>
         </FrameLayout>
         <FrameLayout 
             android:layout_height="100dp"
             android:layout_width="0dp"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
-                android:layout_height="wrap_content" 
-                android:src="@drawable/icon_home" 
+
+            <ImageView
                 android:id="@+id/btnHome"
-                android:layout_gravity="center_horizontal|center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/home"
+                android:src="@drawable/icon_home" >
+
             </ImageView>
         </FrameLayout>
         <FrameLayout 
@@ -141,11 +183,15 @@
             android:layout_height="130dp"
             android:layout_width="wrap_content"
             android:layout_weight="1">
-            <ImageView android:layout_width="wrap_content" 
-                android:layout_height="wrap_content" 
-                android:src="@drawable/medical" 
+
+            <ImageView
                 android:id="@+id/imgCampus"
-                android:layout_gravity="center_horizontal|center_vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@string/medical"
+                android:src="@drawable/medical" >
+
             </ImageView>
         </FrameLayout>
     </TableRow>    
@@ -156,14 +202,16 @@
             android:layout_width="fill_parent"
             android:layout_weight="1"
             android:gravity="center">
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Medical Campus"
+            android:text="@string/medical"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#FFFFFF" />
+
         </FrameLayout>
     </TableRow>    
 </TableLayout>
