@@ -76,7 +76,7 @@ public final class R {
         public static final int btnNews=0x7f08000e;
         public static final int btnPhoneDir=0x7f080012;
         public static final int btnPublicSafety=0x7f080011;
-        public static final int button1=0x7f080029;
+        public static final int button1=0x7f08002a;
         public static final int id_list_view=0x7f080024;
         public static final int id_list_view_hialeah=0x7f080019;
         public static final int id_list_view_west=0x7f080025;
@@ -86,6 +86,7 @@ public final class R {
         public static final int imgCreatedBy=0x7f080027;
         public static final int imgHialeah=0x7f08001c;
         public static final int imgHialeahMap=0x7f080017;
+        public static final int imgHome=0x7f080029;
         public static final int imgHomestead=0x7f08001d;
         public static final int imgInformation=0x7f08001b;
         public static final int imgInteramerican=0x7f08001e;
@@ -93,12 +94,12 @@ public final class R {
         public static final int imgMdcLogo=0x7f08001a;
         public static final int imgMedical=0x7f080020;
         public static final int imgNorth=0x7f080021;
-        public static final int imgPhone=0x7f08002a;
+        public static final int imgPhone=0x7f08002b;
         public static final int imgSupport=0x7f080026;
         public static final int imgWest=0x7f080022;
         public static final int imgWolfson=0x7f080023;
-        public static final int menu_settings=0x7f08002c;
-        public static final int safetyContacts=0x7f08002b;
+        public static final int menu_settings=0x7f08002d;
+        public static final int safetyContacts=0x7f08002c;
         public static final int textView1=0x7f080015;
         public static final int txtHialeahMap=0x7f080016;
         public static final int txtMTC=0x7f080001;
