@@ -57,7 +57,8 @@ public class Information extends Activity {
 				@Override
 				public void onClick(View v) {
 					//About us launch intent
-					startActivity(new Intent(Information.this, AboutUs.class));						
+					startActivity(new Intent(Information.this, AboutUs.class));
+					finish();
 				}
 		
 		 });//End OnClickListener
