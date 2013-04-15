@@ -27,8 +27,7 @@ public class HomeActivity extends Activity {
 			public boolean onTouch(View arg0, MotionEvent arg1) {
 				// TODO Auto-generated method stub
 				imgInformation.setImageResource(R.drawable.information_onclick);
-				startActivity(new Intent(HomeActivity.this, Information.class));				
-				finish();
+				startActivity(new Intent(HomeActivity.this, Information.class));
 				return false;
 			}        	
         });
@@ -39,7 +38,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, HialeahActivity.class));
-				finish();
 			}
         	
         });
@@ -50,7 +48,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, WolfsonActivity.class));
-				finish();
 			}
         	
         });
@@ -61,7 +58,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, KendallActivity.class));
-				finish();
 			}
         	
         });
@@ -72,7 +68,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, InterAmericanActivity.class));
-				finish();
 			}
         	
         });
@@ -83,7 +78,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, NorthActivity.class));
-				finish();
 			}
         	
         });
@@ -94,7 +88,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, HomesteadActivity.class));
-				finish();
 			}
         	
         });
@@ -105,7 +98,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, WestActivity.class));
-				finish();
 			}
         	
         });
@@ -116,7 +108,6 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, MedicalActivity.class));
-				finish();
 			}
         	
         });
