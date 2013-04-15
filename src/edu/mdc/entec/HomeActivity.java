@@ -17,15 +17,15 @@ public class HomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_layout);
         
-        ImageView imgInformation = (ImageView) findViewById(R.id.imgInformation);
+        final ImageView imgInformation = (ImageView) findViewById(R.id.imgInformation);
         imgInformation.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, Information.class));
+				imgInformation.setImageResource(R.drawable.information_onclick);
 				finish();
-			}
-        	
+			}        	
         });
         
         ImageView imgHialeah = (ImageView) findViewById(R.id.imgHialeah);

@@ -49,21 +49,22 @@ public final class R {
         public static final int info_createdby=0x7f02001b;
         public static final int info_support=0x7f02001c;
         public static final int information=0x7f02001d;
-        public static final int interamerican=0x7f02001e;
-        public static final int interamerican_map=0x7f02001f;
-        public static final int interamerican_parking_map=0x7f020020;
-        public static final int kendall=0x7f020021;
-        public static final int kendallmap=0x7f020022;
-        public static final int kendallsafety=0x7f020023;
-        public static final int mdc_logo=0x7f020024;
-        public static final int mdc_logo_shadow=0x7f020025;
-        public static final int medical=0x7f020026;
-        public static final int mtc_logo=0x7f020027;
-        public static final int north=0x7f020028;
-        public static final int north_map=0x7f020029;
-        public static final int public_safety_img=0x7f02002a;
-        public static final int west=0x7f02002b;
-        public static final int wolfson=0x7f02002c;
+        public static final int information_onclick=0x7f02001e;
+        public static final int interamerican=0x7f02001f;
+        public static final int interamerican_map=0x7f020020;
+        public static final int interamerican_parking_map=0x7f020021;
+        public static final int kendall=0x7f020022;
+        public static final int kendallmap=0x7f020023;
+        public static final int kendallsafety=0x7f020024;
+        public static final int mdc_logo=0x7f020025;
+        public static final int mdc_logo_shadow=0x7f020026;
+        public static final int medical=0x7f020027;
+        public static final int mtc_logo=0x7f020028;
+        public static final int north=0x7f020029;
+        public static final int north_map=0x7f02002a;
+        public static final int public_safety_img=0x7f02002b;
+        public static final int west=0x7f02002c;
+        public static final int wolfson=0x7f02002d;
     }
     public static final class id {
         public static final int btnAngel=0x7f08000e;
