@@ -5,8 +5,9 @@ import com.google.analytics.tracking.android.EasyTracker;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.widget.ImageView;
 
 public class AboutUs extends Activity {
@@ -15,16 +16,19 @@ public class AboutUs extends Activity {
         
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.about_us_layout); 
-		ImageView imgHome = (ImageView) findViewById(R.id.imgHome);
-		 imgHome.setOnClickListener(new OnClickListener() {
+		
+		final ImageView imgHome = (ImageView) findViewById(R.id.imgHome);
+		 imgHome.setOnTouchListener(new OnTouchListener() {
 
 				@Override
-				public void onClick(View v) {
-					//About us launch intent
-					startActivity(new Intent(AboutUs.this, HomeActivity.class));
+				public boolean onTouch(View v, MotionEvent event) {
+					// TODO Auto-generated method stub
+					imgHome.setImageResource(R.drawable.home_onclick);
+					startActivity(new Intent(AboutUs.this, HomeActivity.class));					
 					finish();
+					return false;
 				}
-			});//End on click listener		 
+			});//End on touch listener		 
 		};//End OnCreate
 		
 		//Code that allows Google Analytics to work

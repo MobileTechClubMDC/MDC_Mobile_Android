@@ -7,8 +7,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.widget.ImageView;
 
 public class Information extends Activity {
@@ -17,17 +19,18 @@ public class Information extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.information);
         
-        ImageView imgHome = (ImageView) findViewById(R.id.imgHome);
-		 imgHome.setOnClickListener(new OnClickListener() {
+        final ImageView imgHome = (ImageView) findViewById(R.id.imgHome);
+		 imgHome.setOnTouchListener(new OnTouchListener() {
 
 				@Override
-				public void onClick(View v) {
-					//About us launch intent
-					startActivity(new Intent(Information.this, HomeActivity.class));
+				public boolean onTouch(View v, MotionEvent event) {
+					// TODO Auto-generated method stub
+					imgHome.setImageResource(R.drawable.home_onclick);
+					startActivity(new Intent(Information.this, HomeActivity.class));					
 					finish();
+					return false;
 				}
-		
-		 });//End OnClickListener
+			});//End on touch listener
         
         //Accesses strings.xml to insert build number into support email.
         final String BuildNumber = getString(R.string.build_number);
