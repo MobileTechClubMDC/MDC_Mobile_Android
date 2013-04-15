@@ -17,13 +17,14 @@ public class Information extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.information);
         
-        ImageView imgHome = (ImageView) findViewById(R.id.imgHome);
+        final ImageView imgHome = (ImageView) findViewById(R.id.imgHome);
 		 imgHome.setOnClickListener(new OnClickListener() {
 
 				@Override
 				public void onClick(View v) {
 					//About us launch intent
-					startActivity(new Intent(Information.this, HomeActivity.class));
+					imgHome.setImageResource(R.drawable.home_onclick);
+					startActivity(new Intent(Information.this, HomeActivity.class));					
 					finish();
 				}
 		
@@ -57,7 +58,8 @@ public class Information extends Activity {
 				@Override
 				public void onClick(View v) {
 					//About us launch intent
-					startActivity(new Intent(Information.this, AboutUs.class));						
+					startActivity(new Intent(Information.this, AboutUs.class));
+					finish();
 				}
 		
 		 });//End OnClickListener

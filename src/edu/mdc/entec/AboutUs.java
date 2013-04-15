@@ -15,13 +15,14 @@ public class AboutUs extends Activity {
         
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.about_us_layout); 
-		ImageView imgHome = (ImageView) findViewById(R.id.imgHome);
+		final ImageView imgHome = (ImageView) findViewById(R.id.imgHome);
 		 imgHome.setOnClickListener(new OnClickListener() {
 
 				@Override
 				public void onClick(View v) {
 					//About us launch intent
-					startActivity(new Intent(AboutUs.this, HomeActivity.class));
+					imgHome.setImageResource(R.drawable.home_onclick);
+					startActivity(new Intent(AboutUs.this, HomeActivity.class));					
 					finish();
 				}
 			});//End on click listener		 

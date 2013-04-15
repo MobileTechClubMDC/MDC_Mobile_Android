@@ -22,8 +22,8 @@ public class HomeActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				startActivity(new Intent(HomeActivity.this, Information.class));
 				imgInformation.setImageResource(R.drawable.information_onclick);
+				startActivity(new Intent(HomeActivity.this, Information.class));				
 				finish();
 			}        	
         });
