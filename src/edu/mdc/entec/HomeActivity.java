@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.widget.ImageView;
 
 public class HomeActivity extends Activity {
@@ -18,13 +20,16 @@ public class HomeActivity extends Activity {
         setContentView(R.layout.home_layout);
         
         final ImageView imgInformation = (ImageView) findViewById(R.id.imgInformation);
-        imgInformation.setOnClickListener(new OnClickListener() {
+        imgInformation.setOnTouchListener(new OnTouchListener() {
+
 
 			@Override
-			public void onClick(View v) {
+			public boolean onTouch(View arg0, MotionEvent arg1) {
+				// TODO Auto-generated method stub
 				imgInformation.setImageResource(R.drawable.information_onclick);
 				startActivity(new Intent(HomeActivity.this, Information.class));				
 				finish();
+				return false;
 			}        	
         });
         
