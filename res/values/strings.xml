@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Build number must be changed every build for support & feedback accuracy -->
-    <string name="build_number">MDC Mobile Beta Build 5.3</string>
+    <string name="build_number">MDC Mobile Beta Build 6</string>
     
     <string name="app_name">MDC Mobile</string>
     <string name="menu_settings">Settings</string>
@@ -39,12 +39,21 @@
     
     <!-- Contributors -->
     <string name="jack_lusby">Professor Jack Lusby</string>
+    <string name="jesus_aguilar">Jesus Aguilar</string>
+	<string name="edel_benavides">Edel Benavides</string>
     <string name="joel_cruz">Joel Cruz</string>
     <string name="frank_gonzalez">Frank Gonzalez</string>
     <string name="joeseph_george">Joseph George</string>
     <string name="patrick_helmus">Patrick Helmus</string>
+    <string name="jean_hyppolite">Jean Hyppolite</string>
+    <string name="darian_mendez">Darian Mendez</string>
     <string name="luis_portillo">Luis Portillo</string>
+    <string name="jahaziel_rodriguez">Jahaziel Rodriguez</string>
     <string name="mario_thomas">Mario Thomas</string>
+    <string name="sean_paul_williams">Sean Paul Williams</string>
+    
+
+
     
     
 
