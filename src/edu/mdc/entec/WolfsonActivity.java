@@ -4,7 +4,6 @@ import com.google.analytics.tracking.android.EasyTracker;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -18,138 +17,136 @@ public class WolfsonActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wolfson_campus_layout);
         
-        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        
-		//Coding for launching MDC main page
-		ImageView btnMyMdc = (ImageView) findViewById(R.id.btnMyMdc);		
-		btnMyMdc.setOnClickListener(new OnClickListener() {
+        //btnMyMDC
+        ImageView MyMdc = (ImageView) findViewById(R.id.btnMyMdc);
+        MyMdc.setOnClickListener(new OnClickListener() {
 			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("https://mymdc.mdc.edu/")));
+        	public void onClick(View v) {
+				//Loads the MYMDC page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mymdc.mdc.edu/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "mymdc_button", null);
 			}
-		});
-		
-		//Coding for launching MDC email page
-		ImageView btnEmail = (ImageView) findViewById(R.id.btnEmail);
-		btnEmail.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://email.mymdc.net/")));
-			}
-		});
-		
-		//Coding for launching MDC events page
-		ImageView btnEvents = (ImageView) findViewById(R.id.btnEvents);
-        btnEvents.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub  
-				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://calendar.mdc.edu/mobile/mobilelist.aspx")));
-			}
-		});
+        });
         
-        //Coding for launching MDC map page
-        ImageView btnMap = (ImageView) findViewById(R.id.btnMap);
-        btnMap.setOnClickListener(new OnClickListener() {
+      //btnEmail
+        ImageView Email = (ImageView) findViewById(R.id.btnEmail);
+        Email.setOnClickListener(new OnClickListener() {
 			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub  
-				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://www.mdc.edu/main/images/wolfson_campus_map_01_10_2013_tcm6-75074.jpg")));
+        	public void onClick(View v) {
+				//Loads the Email login page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://email.mymdc.net/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "email_button", null);
 			}
-		});
+        });
         
-        //Coding for launching MDC Angel page
-        ImageView btnAngel = (ImageView) findViewById(R.id.btnAngel);
-        btnAngel.setOnClickListener(new OnClickListener() {
+      //bnEvents
+        ImageView Events = (ImageView) findViewById(R.id.btnEvents);
+        Events.setOnClickListener(new OnClickListener() {
 			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("https://mycourses.mdc.edu/")));
+        	public void onClick(View v) {
+				//Loads the upcoming events
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://calendar.mdc.edu/mobile/mobilelist.aspx")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "events_button", null);
 			}
-		});
+        });
         
-        //Coding for launching MDC news page
-        ImageView btnNews = (ImageView) findViewById(R.id.btnNews);
-        btnNews.setOnClickListener(new OnClickListener() {
+      //btnMap
+        ImageView Map = (ImageView) findViewById(R.id.btnMap);
+        Map.setOnClickListener(new OnClickListener() {
 			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://www.mdc.edu/main/news/")));
+        	public void onClick(View v) {
+				//Loads the Wolfson campus map
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/hialeah/images/hialeah_map.gif")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "map_button", null);
+        		
 			}
-		});
+        });
         
-        
-	    //Coding for launching MDC library page
-        ImageView btnLibrary = (ImageView) findViewById(R.id.btnLibrary);
-        btnLibrary.setOnClickListener(new OnClickListener() {
+      //btnAngel
+        ImageView Angel = (ImageView) findViewById(R.id.btnAngel);
+        Angel.setOnClickListener(new OnClickListener() {
 			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://www.mdc.edu/librarymobi/")));
+        	public void onClick(View v) {
+				//Loads the Angel web page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mycourses.mdc.edu/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "angel_button", null);
 			}
-		});
+        });
         
-        //Coding for launching MDC courses page
-        ImageView btnCourses = (ImageView) findViewById(R.id.btnCourses);
-        btnCourses.setOnClickListener(new OnClickListener() {
+      //btnNews
+        ImageView News = (ImageView) findViewById(R.id.btnNews);
+        News.setOnClickListener(new OnClickListener() {
 			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
+        	public void onClick(View v) {
+				//Loads the campus news
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/news/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "news_button", null);
 			}
-		});
+        });
         
-        //Coding for launching MDC public safety page
-        ImageView btnPublicSafety = (ImageView) findViewById(R.id.btnPublicSafety);
-        btnPublicSafety.setOnClickListener(new OnClickListener() {
+      //btnLibrary
+        ImageView Library = (ImageView) findViewById(R.id.btnLibrary);
+        Library.setOnClickListener(new OnClickListener() {
 			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(WolfsonActivity.this, WolfsonPublicSafetyActivity.class ));
+        	public void onClick(View v) {
+				//Loads the Library page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/librarymobi/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "library_button", null);
 			}
-		});
+        });
         
-        //Coding for launching MDC phone directory page
-        ImageView btnPhoneDir = (ImageView) findViewById(R.id.btnPhoneDir);
-        btnPhoneDir.setOnClickListener(new OnClickListener() {
+      //btnCourses
+        ImageView Courses = (ImageView) findViewById(R.id.btnCourses);
+        Courses.setOnClickListener(new OnClickListener() {
 			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(WolfsonActivity.this, WolfsonPhoneDirActivity.class ));
+        	public void onClick(View v) {
+				//Loads the courses web page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "courses_button", null);
 			}
-		});
+        });
         
-        //Coding for launching MDC campus page
-        ImageView btnSwitchCampus = (ImageView) findViewById(R.id.btnHome);
-        btnSwitchCampus.setOnClickListener(new OnClickListener() {
-			
-		//	@Override
+      //btnPublicSafety
+        ImageView PublicSafety = (ImageView) findViewById(R.id.btnPublicSafety);
+        PublicSafety.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
+				// TODO Add Public Safety Activity
+				startActivity(new Intent(WolfsonActivity.this, WolfsonPublicSafetyActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "safety_button", null);
+			}
+        });
+        
+      //btnPhoneDirectory
+        ImageView PhoneDir = (ImageView) findViewById(R.id.btnPhoneDir);
+        PhoneDir.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				startActivity(new Intent(WolfsonActivity.this, WolfsonPhoneDirActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "directory_button", null);
+			}
+        });
+        
+        ImageView SwitchCampus=(ImageView)findViewById(R.id.btnHome);
+        SwitchCampus.setOnClickListener(new OnClickListener(){
+        	
+        	public void onClick(View v) {
+        		
+        		//btnHome
         		startActivity(new Intent(WolfsonActivity.this, HomeActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "home_button", null);
         		finish();
-			}
-    		});
+        	}
+        });
     	
     	}
     

@@ -19,127 +19,137 @@ public class HomesteadActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homestead_campus_layout);
         
-        ImageView a=(ImageView) findViewById(R.id.btnMyMdc) ;
-        a.setOnClickListener(new OnClickListener() 
-        {
-        public void onClick(View v) 
-        	{
-				// TODO Auto-generated method stub
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("https://mymdc.mdc.edu/")));
+      //btnMyMDC
+        ImageView MyMdc = (ImageView) findViewById(R.id.btnMyMdc);
+        MyMdc.setOnClickListener(new OnClickListener() {
+			
+        	public void onClick(View v) {
+				//Loads the MYMDC page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mymdc.mdc.edu/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "homestead_activity", "mymdc_button", null);
 			}
-    	});
+        });
         
-        ImageView b=(ImageView) findViewById(R.id.btnEmail) ;
-        b.setOnClickListener(new OnClickListener() 
-        {
-        public void onClick(View v) 
-        	{
-				// TODO Auto-generated method stub
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("http://email.mymdc.net/")));
+      //btnEmail
+        ImageView Email = (ImageView) findViewById(R.id.btnEmail);
+        Email.setOnClickListener(new OnClickListener() {
+			
+        	public void onClick(View v) {
+				//Loads the Email login page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://email.mymdc.net/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "homestead_activity", "email_button", null);
 			}
-    	});
+        });
         
-        ImageView c=(ImageView) findViewById(R.id.btnEvents) ;
-        c.setOnClickListener(new OnClickListener() 
-        {
-        public void onClick(View v) 
-        	{
-				// TODO Auto-generated method stub
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-    			Uri.parse("http://calendar.mdc.edu/mobile/mobilelist.aspx")));
+      //bnEvents
+        ImageView Events = (ImageView) findViewById(R.id.btnEvents);
+        Events.setOnClickListener(new OnClickListener() {
+			
+        	public void onClick(View v) {
+				//Loads the upcoming events
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://calendar.mdc.edu/mobile/mobilelist.aspx")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "homestead_activity", "events_button", null);
 			}
-    	});
+        });
         
-        ImageView d=(ImageView) findViewById(R.id.btnMap) ;
-        d.setOnClickListener(new OnClickListener() 
-        {
-        public void onClick(View v) 
-        	{
-				// TODO Auto-generated method stub
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("http://www.mdc.edu/main/images/homestead-campus5_tcm6-1738.jpg")));
+      //btnMap
+        ImageView Map = (ImageView) findViewById(R.id.btnMap);
+        Map.setOnClickListener(new OnClickListener() {
+			
+        	public void onClick(View v) {
+				//Loads the Hialeah campus map
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/hialeah/images/hialeah_map.gif")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "homestead_activity", "map_button", null);
+        		
 			}
-    	});
+        });
         
-        ImageView f=(ImageView) findViewById(R.id.btnAngel) ;
-        f.setOnClickListener(new OnClickListener() 
-        {
-        public void onClick(View v) 
-        	{
-				// TODO Auto-generated method stub
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("http://mycourses.mdc.edu")));
+      //btnAngel
+        ImageView Angel = (ImageView) findViewById(R.id.btnAngel);
+        Angel.setOnClickListener(new OnClickListener() {
+			
+        	public void onClick(View v) {
+				//Loads the Angel web page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mycourses.mdc.edu/")));
+
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "homestead_activity", "angel_button", null);
 			}
-    	});
+        });
         
-        ImageView g=(ImageView) findViewById(R.id.btnNews) ;
-        g.setOnClickListener(new OnClickListener() 
-        {
-        public void onClick(View v) 
-        	{
-				// TODO Auto-generated method stub
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-    			Uri.parse("http://www.mdc.edu/main/news/")));
+      //btnNews
+        ImageView News = (ImageView) findViewById(R.id.btnNews);
+        News.setOnClickListener(new OnClickListener() {
+			
+        	public void onClick(View v) {
+				//Loads the campus news
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/news/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "homestead_activity", "news_button", null);
 			}
-    	});
+        });
         
-        ImageView h=(ImageView) findViewById(R.id.btnLibrary) ;
-        h.setOnClickListener(new OnClickListener() 
-        {
-        public void onClick(View v) 
-        	{
-				// TODO Auto-generated method stub
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("http://www.mdc.edu/librarymobi/")));
+      //btnLibrary
+        ImageView Library = (ImageView) findViewById(R.id.btnLibrary);
+        Library.setOnClickListener(new OnClickListener() {
+			
+        	public void onClick(View v) {
+				//Loads the Library page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/librarymobi/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "homestead_activity", "library_button", null);
 			}
-    	});
+        });
         
-        ImageView i=(ImageView) findViewById(R.id.btnCourses) ;
-        i.setOnClickListener(new OnClickListener() 
-        {
-        public void onClick(View v) 
-        	{
-				// TODO Auto-generated method stub
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
+      //btnCourses
+        ImageView Courses = (ImageView) findViewById(R.id.btnCourses);
+        Courses.setOnClickListener(new OnClickListener() {
+			
+        	public void onClick(View v) {
+				//Loads the courses web page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "homestead_activity", "courses_button", null);
 			}
-    	});
+        });
         
-        ImageView j=(ImageView) findViewById(R.id.btnPublicSafety) ;
-        j.setOnClickListener(new OnClickListener() 
-        {
-        public void onClick(View v) 
-        	{
-				// TODO Auto-generated method stub
-        	startActivity(new Intent(HomesteadActivity.this, HomesteadPublicSafetyActivity.class) ) ;
-				
+      //btnPublicSafety
+        ImageView PublicSafety = (ImageView) findViewById(R.id.btnPublicSafety);
+        PublicSafety.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				// TODO Add Public Safety Activity
+				startActivity(new Intent(HomesteadActivity.this, HomesteadPublicSafetyActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "homestead_activity", "safety_button", null);
 			}
-    	});
+        });
         
-        ImageView k=(ImageView) findViewById(R.id.btnPhoneDir) ;
-        k.setOnClickListener(new OnClickListener() 
-        {
-        public void onClick(View v) 
-        	{
-				// TODO Auto-generated method stub
-        	startActivity(new Intent(HomesteadActivity.this, HomesteadPhoneDirActivity.class) ) ;
-				
+      //btnPhoneDirectory
+        ImageView PhoneDir = (ImageView) findViewById(R.id.btnPhoneDir);
+        PhoneDir.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				startActivity(new Intent(HomesteadActivity.this, HomesteadPhoneDirActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "homestead_activity", "directory_button", null);
 			}
-    	});
+        });
         
-        ImageView l=(ImageView) findViewById(R.id.btnHome) ;
-        l.setOnClickListener(new OnClickListener() 
-        {
-        public void onClick(View v) 
-        	{
-				// TODO Auto-generated method stub
-    		    //Goes back to the pick campus window.
-    		    startActivity(new Intent(HomesteadActivity.this, HomeActivity.class));
-    		    finish();
-			}
-    	});
+        ImageView SwitchCampus=(ImageView)findViewById(R.id.btnHome);
+        SwitchCampus.setOnClickListener(new OnClickListener(){
+        	
+        	public void onClick(View v) {
+        		
+        		//btnHome
+        		startActivity(new Intent(HomesteadActivity.this, HomeActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "homestead_activity", "home_button", null);
+        		finish();
+        	}
+        });
     }
 
   //Code that allows Google Analytics to work

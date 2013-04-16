@@ -28,6 +28,7 @@ public class HomeActivity extends Activity {
 				// TODO Auto-generated method stub
 				imgInformation.setImageResource(R.drawable.information_onclick);
 				startActivity(new Intent(HomeActivity.this, Information.class));
+				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "home_activity", "info_button", null);
 
 				return false;
@@ -40,6 +41,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, HialeahActivity.class));
+				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "home_activity", "hialeah_button", null);
 			}
         	
@@ -51,6 +53,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, WolfsonActivity.class));
+				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "home_activity", "wolfson_button", null);
 			}
         	
@@ -62,6 +65,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, KendallActivity.class));
+				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "home_activity", "kendall_button", null);
 			}
         	
@@ -73,6 +77,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, InterAmericanActivity.class));
+				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "home_activity", "interamerican_button", null);
 			}
         	
@@ -84,6 +89,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, NorthActivity.class));
+				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "home_activity", "north_button", null);
 			}
         	
@@ -95,6 +101,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, HomesteadActivity.class));
+				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "home_activity", "homestead_button", null);
 			}
         	
@@ -106,6 +113,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, WestActivity.class));
+				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "home_activity", "west_button", null);
 			}
         	
@@ -117,6 +125,7 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(HomeActivity.this, MedicalActivity.class));
+				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "home_activity", "medical_button", null);
 			}
         	

@@ -25,6 +25,8 @@ public class HialeahActivity extends Activity {
         	public void onClick(View v) {
 				//Loads the MYMDC page
         		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mymdc.mdc.edu/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "hialeah_activity", "mymdc_button", null);
 			}
         });
         
@@ -35,6 +37,8 @@ public class HialeahActivity extends Activity {
         	public void onClick(View v) {
 				//Loads the Email login page
         		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://email.mymdc.net/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "hialeah_activity", "email_button", null);
 			}
         });
         
@@ -45,6 +49,8 @@ public class HialeahActivity extends Activity {
         	public void onClick(View v) {
 				//Loads the upcoming events
         		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://calendar.mdc.edu/mobile/mobilelist.aspx")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "hialeah_activity", "events_button", null);
 			}
         });
         
@@ -55,6 +61,8 @@ public class HialeahActivity extends Activity {
         	public void onClick(View v) {
 				//Loads the Hialeah campus map
         		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/hialeah/images/hialeah_map.gif")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "hialeah_activity", "map_button", null);
         		
 			}
         });
@@ -66,6 +74,9 @@ public class HialeahActivity extends Activity {
         	public void onClick(View v) {
 				//Loads the Angel web page
         		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mycourses.mdc.edu/")));
+
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "hialeah_activity", "angel_button", null);
 			}
         });
         
@@ -76,6 +87,8 @@ public class HialeahActivity extends Activity {
         	public void onClick(View v) {
 				//Loads the campus news
         		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/news/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "hialeah_activity", "news_button", null);
 			}
         });
         
@@ -86,6 +99,8 @@ public class HialeahActivity extends Activity {
         	public void onClick(View v) {
 				//Loads the Library page
         		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/librarymobi/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "hialeah_activity", "library_button", null);
 			}
         });
         
@@ -96,6 +111,8 @@ public class HialeahActivity extends Activity {
         	public void onClick(View v) {
 				//Loads the courses web page
         		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "hialeah_activity", "courses_button", null);
 			}
         });
         
@@ -105,6 +122,8 @@ public class HialeahActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Add Public Safety Activity
 				startActivity(new Intent(HialeahActivity.this, HialeahPublicSafetyActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "hialeah_activity", "safety_button", null);
 			}
         });
         
@@ -113,6 +132,8 @@ public class HialeahActivity extends Activity {
         PhoneDir.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				startActivity(new Intent(HialeahActivity.this, HialeahPhoneDirActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "hialeah_activity", "directory_button", null);
 			}
         });
         
@@ -123,6 +144,8 @@ public class HialeahActivity extends Activity {
         		
         		//btnHome
         		startActivity(new Intent(HialeahActivity.this, HomeActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "hialeah_activity", "home_button", null);
         		finish();
         	}
         });

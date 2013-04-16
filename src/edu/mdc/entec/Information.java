@@ -26,7 +26,9 @@ public class Information extends Activity {
 				public boolean onTouch(View v, MotionEvent event) {
 					// TODO Auto-generated method stub
 					imgHome.setImageResource(R.drawable.home_onclick);
-					startActivity(new Intent(Information.this, HomeActivity.class));					
+					startActivity(new Intent(Information.this, HomeActivity.class));
+					//Google Analytics Event Tracker
+					EasyTracker.getTracker().sendEvent("ui_action", "info_activity", "home_button", null);
 					finish();
 					return false;
 				}
@@ -50,6 +52,8 @@ public class Information extends Activity {
 				//intent.putExtra(Intent.EXTRA_TEXT, "mail body");
 				//Launches screen to choose mail client
 				startActivity(Intent.createChooser(intent, "Please choose email client"));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "info_activity", "support_button", null);
 				
 			}        
          });//End OnClickListener
@@ -61,6 +65,8 @@ public class Information extends Activity {
 				public void onClick(View v) {
 					//About us launch intent
 					startActivity(new Intent(Information.this, AboutUs.class));
+					//Google Analytics Event Tracker
+					EasyTracker.getTracker().sendEvent("ui_action", "info_activity", "about_button", null);
 					finish();
 				}
 		
@@ -73,7 +79,9 @@ public class Information extends Activity {
 				public void onClick(View v) {
 					//ENTEC launch intent
 					startActivity(new Intent(Intent.ACTION_VIEW, 
-							Uri.parse("http://entec.mdc.edu/")));					
+							Uri.parse("http://entec.mdc.edu/")));
+					//Google Analytics Event Tracker
+					EasyTracker.getTracker().sendEvent("ui_action", "info_activity", "entec_button", null);
 				}
 		
 		 });//End OnClickListener

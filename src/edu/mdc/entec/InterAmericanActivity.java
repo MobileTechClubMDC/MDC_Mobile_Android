@@ -17,139 +17,136 @@ public class InterAmericanActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.interamerican_campus_layout);
         
-      //btnMyMdc
-        ImageView MyMdc=(ImageView)findViewById(R.id.btnMyMdc);
-        MyMdc.setOnClickListener(new OnClickListener(){
-        	
+      //btnMyMDC
+        ImageView MyMdc = (ImageView) findViewById(R.id.btnMyMdc);
+        MyMdc.setOnClickListener(new OnClickListener() {
+			
         	public void onClick(View v) {
-        		
-        		//Loads the MyMDC page
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("https://mymdc.mdc.edu/")));
-        	}
+				//Loads the MYMDC page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mymdc.mdc.edu/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "mymdc_button", null);
+			}
         });
         
-        //btnEmail
-        ImageView Email=(ImageView)findViewById(R.id.btnEmail);
-        Email.setOnClickListener(new OnClickListener(){
-        	
+      //btnEmail
+        ImageView Email = (ImageView) findViewById(R.id.btnEmail);
+        Email.setOnClickListener(new OnClickListener() {
+			
         	public void onClick(View v) {
-        		
-        		//Loads student e-mail access
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://email.mymdc.net/")));
-        	}
+				//Loads the Email login page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://email.mymdc.net/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "email_button", null);
+			}
         });
         
-        //btnEvents
-        ImageView Events=(ImageView)findViewById(R.id.btnEvents);
-        Events.setOnClickListener(new OnClickListener(){
-        	
+      //bnEvents
+        ImageView Events = (ImageView) findViewById(R.id.btnEvents);
+        Events.setOnClickListener(new OnClickListener() {
+			
         	public void onClick(View v) {
-        		
-        //Loads the events for Interamerican
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://calendar.mdc.edu/default.aspx?category=&location=10-0-0&view=Grid")));
-        	}
+				//Loads the upcoming events
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://calendar.mdc.edu/mobile/mobilelist.aspx")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "events_button", null);
+			}
         });
         
-        //btnMap
-        ImageView Map=(ImageView)findViewById(R.id.btnMap);
-        Map.setOnClickListener(new OnClickListener(){
-        	
+      //btnMap
+        ImageView Map = (ImageView) findViewById(R.id.btnMap);
+        Map.setOnClickListener(new OnClickListener() {
+			
         	public void onClick(View v) {
+				//Loads the Interamerican campus map
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/hialeah/images/hialeah_map.gif")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "map_button", null);
         		
-        		//Loads up the maps
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://www.mdc.edu/main/images/interamerican_key2_tcm6-75094.jpg")));        		
-        	}
+			}
         });
         
-        //btnAngel
-        ImageView Angel=(ImageView)findViewById(R.id.btnAngel);
-        Angel.setOnClickListener(new OnClickListener(){
-        	
+      //btnAngel
+        ImageView Angel = (ImageView) findViewById(R.id.btnAngel);
+        Angel.setOnClickListener(new OnClickListener() {
+			
         	public void onClick(View v) {
-        		
-        		//Goes to the URL for Angel
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("https://mycourses.mdc.edu/")));
-        	}
+				//Loads the Angel web page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mycourses.mdc.edu/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "angel_button", null);
+			}
         });
         
-        //btnNews
-        ImageView News=(ImageView)findViewById(R.id.btnNews);
-        News.setOnClickListener(new OnClickListener(){
-        	
+      //btnNews
+        ImageView News = (ImageView) findViewById(R.id.btnNews);
+        News.setOnClickListener(new OnClickListener() {
+			
         	public void onClick(View v) {
-        		
-        		//Loads campus news
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://www.mdc.edu/main/news/")));
-        	}
+				//Loads the campus news
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/news/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "news_button", null);
+			}
         });
         
-        //btnLibrary
-        ImageView Library=(ImageView)findViewById(R.id.btnLibrary);
-        Library.setOnClickListener(new OnClickListener(){
-        	
+      //btnLibrary
+        ImageView Library = (ImageView) findViewById(R.id.btnLibrary);
+        Library.setOnClickListener(new OnClickListener() {
+			
         	public void onClick(View v) {
-        		
-        		//Loads the West Library
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://www.mdc.edu/west/library/")));
-        	}
+				//Loads the Library page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/librarymobi/")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "library_button", null);
+			}
         });
         
-        //btnCourses
-        ImageView Courses=(ImageView)findViewById(R.id.btnCourses);
-        Courses.setOnClickListener(new OnClickListener(){
-        	
+      //btnCourses
+        ImageView Courses = (ImageView) findViewById(R.id.btnCourses);
+        Courses.setOnClickListener(new OnClickListener() {
+			
         	public void onClick(View v) {
-        		
-        		//Loads the course catalogs.
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-        				Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
-        	}
+				//Loads the courses web page
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/academics/course_offerings.aspx")));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "courses_button", null);
+			}
         });
         
-        //btnPublicSafety
-        ImageView PublicSafety=(ImageView)findViewById(R.id.btnPublicSafety);
-        PublicSafety.setOnClickListener(new OnClickListener(){
-        	
-        	public void onClick(View v) {
-        		
-       //Loads the Public Safety info for Interamerican
-        		
-        		startActivity(new Intent(InterAmericanActivity.this,
-        				InterAmericanPublicSafetyActivity.class));
-        	}
+      //btnPublicSafety
+        ImageView PublicSafety = (ImageView) findViewById(R.id.btnPublicSafety);
+        PublicSafety.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				// TODO Add Public Safety Activity
+				startActivity(new Intent(InterAmericanActivity.this, InterAmericanPublicSafetyActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "safety_button", null);
+			}
         });
         
-        //btnPhoneDir
-        ImageView PhoneDir=(ImageView)findViewById(R.id.btnPhoneDir);
-        PhoneDir.setOnClickListener(new OnClickListener(){
-        	
-        	public void onClick(View v) {
-        		
-        //Loads the Interamerican Directory
-        		
-        		
-        		startActivity(new Intent(InterAmericanActivity.this, InterAmericanPhoneDirActivity.class));
-        	}
+      //btnPhoneDirectory
+        ImageView PhoneDir = (ImageView) findViewById(R.id.btnPhoneDir);
+        PhoneDir.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				startActivity(new Intent(InterAmericanActivity.this, InterAmericanPhoneDirActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "directory_button", null);
+			}
         });
         
-        //btnSwitchCampus
         ImageView SwitchCampus=(ImageView)findViewById(R.id.btnHome);
         SwitchCampus.setOnClickListener(new OnClickListener(){
         	
         	public void onClick(View v) {
         		
-        		//Goes back to the pick campus window.
+        		//btnHome
         		startActivity(new Intent(InterAmericanActivity.this, HomeActivity.class));
+				//Google Analytics Event Tracker
+				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "home_button", null);
         		finish();
         	}
-        });  
+        });
    }
     
   //Code that allows Google Analytics to work

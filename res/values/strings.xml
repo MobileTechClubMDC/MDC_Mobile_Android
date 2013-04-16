@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Build number must be changed every build for support & feedback accuracy -->
-    <string name="build_number">MDC Mobile Beta Build 5.2</string>
+    <string name="build_number">MDC Mobile Beta Build 5.3</string>
     
     <string name="app_name">MDC Mobile</string>
     <string name="menu_settings">Settings</string>
