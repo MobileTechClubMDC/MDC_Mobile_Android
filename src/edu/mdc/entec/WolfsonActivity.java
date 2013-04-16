@@ -59,7 +59,7 @@ public class WolfsonActivity extends Activity {
 			
         	public void onClick(View v) {
 				//Loads the Wolfson campus map
-        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/hialeah/images/hialeah_map.gif")));
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/images/wolfson_campus_map_01_10_2013_tcm6-75074.jpg")));
 				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "wolfson_activity", "map_button", null);
         		

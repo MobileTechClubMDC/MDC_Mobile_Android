@@ -60,7 +60,7 @@ public class WestActivity extends Activity {
 			
         	public void onClick(View v) {
 				//Loads the West campus map
-        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/hialeah/images/hialeah_map.gif")));
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/west/images/images_home/west_c_map.gif")));
 				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "west_activity", "map_button", null);
         		

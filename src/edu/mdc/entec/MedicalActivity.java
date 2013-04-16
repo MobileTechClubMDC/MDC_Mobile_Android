@@ -60,7 +60,7 @@ public class MedicalActivity extends Activity {
 			
         	public void onClick(View v) {
 				//Loads the Medical campus map
-        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/hialeah/images/hialeah_map.gif")));
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/medical/images_map/medical_center_map.jpg")));
 				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "medical_activity", "map_button", null);
         		

@@ -59,7 +59,7 @@ public class InterAmericanActivity extends Activity {
 			
         	public void onClick(View v) {
 				//Loads the Interamerican campus map
-        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/hialeah/images/hialeah_map.gif")));
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/main/images/interamerican_key2_tcm6-75094.jpg")));
 				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "interamerican_activity", "map_button", null);
         		

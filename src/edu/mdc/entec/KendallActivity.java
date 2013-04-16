@@ -60,7 +60,7 @@ public class KendallActivity extends Activity {
 			
         	public void onClick(View v) {
 				//Loads the Kendall campus map
-        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/hialeah/images/hialeah_map.gif")));
+        		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mdc.edu/kendall/images_home/kendall_map_07_14_09.jpg")));
 				//Google Analytics Event Tracker
 				EasyTracker.getTracker().sendEvent("ui_action", "kendall_activity", "map_button", null);
         		
